@@ -13,13 +13,17 @@ Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
 
 ## Takım Üyeleri
 
-1.  [Edin_Džeko](/takim/edindzeko.qmd)
+1.  [Cansu Dursun Avcı](/takim/cansudursunavcı.qmd)
 
-2.  [Dušan Tadić](/takim/dusantadic.qmd)
+2.  [Esen](/takim/dusantadic.qmd)
 
-3.  [Frederico Rodrigues de Paula Santos](/takim/fred.qmd)
+3.  [Yeşim](/takim/fred.qmd)
 
-4.  [Sebastian Szymański](/takim/szymanski.qmd)
+4.  [Uğur](/takim/szymanski.qmd)
+
+5.  [Osman](/takim/szymanski.qmd)
+
+6.  [Ayberk](/takim/szymanski.qmd)
 
 
 ## Proje Adı
