@@ -23,8 +23,8 @@ website:
 
             
     tools:
-      - icon: github
-        href: https://github.com
+       icon: github
+       href: https://github.com
 
   sidebar:
     - title: "CalD1Emalar"
