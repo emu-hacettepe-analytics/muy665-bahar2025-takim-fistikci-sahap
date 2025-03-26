@@ -6,14 +6,14 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 # Takım Üyeleri
 
-1.  ESEN ERTÜRK
+1.  *ESEN ERTÜRK*
 
-2.  CANSU DURSUN AVCI
+2.  *CANSU DURSUN AVCI*
 
-3.  YESİM GURER CERAN
+3.  *YESİM GURER CERAN*
 
-4.  UĞUR SÜKRÜ CERAN
+4.  *UĞUR SÜKRÜ CERAN*
 
-5.  OSMAN ÖZKAL
+5.  *OSMAN ÖZKAL*
 
-6.  ÖMER AYBERK KESKİN
+6.  *ÖMER AYBERK KESKİN*
