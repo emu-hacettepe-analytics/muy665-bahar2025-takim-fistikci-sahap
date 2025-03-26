@@ -2,17 +2,76 @@
 title: "Çalışma 2"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+## (a)Video Özeti Yazılacak
 
-esen
+*özet yazılacak yer*
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+## (b) Fonksiyonlar ve Döngüler ile Verileri Özetleme
 
-## (a)
+Veri Ön Ayarı
 
 ```{r}
-1 + 1
+
+data(mtcars)
+
+class(mtcars)
+
+head(mtcars)
 ```
 
-## (b)
+Özel Özet Fonksiyonu
+
+```{r}
+my_summary_stats <- function(vec) {
+
+veri <- list( ortalama = mean(vec),
+
+medyan = median(vec),
+
+s_sapma = sd(vec),
+
+min = min(vec),
+
+maks = max(vec) )
+} 
+
+degerlendir <- my_summary_stats(mtcars$mpg) 
+print(degerlendir)
+```
+
+Fonksiyonu Döngü Kullanarak Uygulama
+
+```{r}
+for(i in 1:ncol(mtcars))
+{
+   cat("Sutun adi:", colnames(mtcars)[i], "\n") # her sutun için fonksiyonu çağırarak özet verileri sıralar 
+  print(my_summary_stats(mtcars[[i]])) 
+}
+```
+
+Apply İle Farklı Bir Yaklaşım
+
+```{r}
+apply(mtcars, 2, my_summary_stats)
+```
+
+## (c) Boş Değerler ile Mücadele
+
+```{r}
+
+library(dslabs)
+
+
+data(na_example)
+
+class(na_example)
+
+
+sum(is.na(na_example))
+
+na_example[is.na(na_example)] <- 2025
+print(na_example)
+
+count_2025 <- sum(na_example== 2025)
+
+```
