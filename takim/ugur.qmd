@@ -2,7 +2,7 @@
 title: "ugur sukru ceran"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+[![](images/UGUR.JPG){fig-align="center" width="191"}](https://www.linkedin.com/in/u%C4%9Fur-ceran-24b018a8/)
 
 # Eğitim
 
