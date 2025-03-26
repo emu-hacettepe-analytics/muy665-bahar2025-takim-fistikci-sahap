@@ -197,8 +197,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a" id="toc-a" class="nav-link active" data-scroll-target="#a">(a)</a></li>
-  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
+  <li><a href="#avideo-özeti-yazılacak" id="toc-avideo-özeti-yazılacak" class="nav-link active" data-scroll-target="#avideo-özeti-yazılacak">(a)Video Özeti Yazılacak</a></li>
+  <li><a href="#b-fonksiyonlar-ve-döngüler-ile-verileri-özetleme" id="toc-b-fonksiyonlar-ve-döngüler-ile-verileri-özetleme" class="nav-link" data-scroll-target="#b-fonksiyonlar-ve-döngüler-ile-verileri-özetleme">(b) Fonksiyonlar ve Döngüler ile Verileri Özetleme</a></li>
+  <li><a href="#c-boş-değerler-ile-mücadele" id="toc-c-boş-değerler-ile-mücadele" class="nav-link" data-scroll-target="#c-boş-değerler-ile-mücadele">(c) Boş Değerler ile Mücadele</a></li>
   </ul>
 </nav>
 </nav>
@@ -232,17 +233,536 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 (Aşağıdakiler örnek olarak verilmiştir.)</p>
 <p>esen</p>
 <p>Bu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.</p>
-<section id="a" class="level2">
-<h2 class="anchored" data-anchor-id="a">(a)</h2>
+<section id="avideo-özeti-yazılacak" class="level2">
+<h2 class="anchored" data-anchor-id="avideo-özeti-yazılacak">(a)Video Özeti Yazılacak</h2>
+</section>
+<section id="b-fonksiyonlar-ve-döngüler-ile-verileri-özetleme" class="level2">
+<h2 class="anchored" data-anchor-id="b-fonksiyonlar-ve-döngüler-ile-verileri-özetleme">(b) Fonksiyonlar ve Döngüler ile Verileri Özetleme</h2>
+<p>Veri Ön Ayarı</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>[1] "data.frame"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</div>
+</div>
+<p>Özel Özet Fonksiyonu</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>my_summary_stats <span class="ot">&lt;-</span> <span class="cf">function</span>(vec) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">list</span>( <span class="at">ortalama =</span> <span class="fu">mean</span>(vec),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">medyan =</span> <span class="fu">median</span>(vec),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">s_sapma =</span> <span class="fu">sd</span>(vec),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="at">min =</span> <span class="fu">min</span>(vec),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="at">maks =</span> <span class="fu">max</span>(vec) )</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>degerlendir <span class="ot">&lt;-</span> <span class="fu">my_summary_stats</span>(mtcars<span class="sc">$</span>mpg) </span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(degerlendir)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$ortalama
+[1] 20.09062
+
+$medyan
+[1] 19.2
+
+$s_sapma
+[1] 6.026948
+
+$min
+[1] 10.4
+
+$maks
+[1] 33.9</code></pre>
+</div>
+</div>
+<p>Fonksiyonu Döngü Kullanarak Uygulama</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(mtcars))</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">cat</span>(<span class="st">"Sutun adi:"</span>, <span class="fu">colnames</span>(mtcars)[i], <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="co"># her sutun için fonksiyonu çağırarak özet verileri sıralar </span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">my_summary_stats</span>(mtcars[[i]])) </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Sutun adi: mpg 
+$ortalama
+[1] 20.09062
+
+$medyan
+[1] 19.2
+
+$s_sapma
+[1] 6.026948
+
+$min
+[1] 10.4
+
+$maks
+[1] 33.9
+
+Sutun adi: cyl 
+$ortalama
+[1] 6.1875
+
+$medyan
+[1] 6
+
+$s_sapma
+[1] 1.785922
+
+$min
+[1] 4
+
+$maks
+[1] 8
+
+Sutun adi: disp 
+$ortalama
+[1] 230.7219
+
+$medyan
+[1] 196.3
+
+$s_sapma
+[1] 123.9387
+
+$min
+[1] 71.1
+
+$maks
+[1] 472
+
+Sutun adi: hp 
+$ortalama
+[1] 146.6875
+
+$medyan
+[1] 123
+
+$s_sapma
+[1] 68.56287
+
+$min
+[1] 52
+
+$maks
+[1] 335
+
+Sutun adi: drat 
+$ortalama
+[1] 3.596563
+
+$medyan
+[1] 3.695
+
+$s_sapma
+[1] 0.5346787
+
+$min
+[1] 2.76
+
+$maks
+[1] 4.93
+
+Sutun adi: wt 
+$ortalama
+[1] 3.21725
+
+$medyan
+[1] 3.325
+
+$s_sapma
+[1] 0.9784574
+
+$min
+[1] 1.513
+
+$maks
+[1] 5.424
+
+Sutun adi: qsec 
+$ortalama
+[1] 17.84875
+
+$medyan
+[1] 17.71
+
+$s_sapma
+[1] 1.786943
+
+$min
+[1] 14.5
+
+$maks
+[1] 22.9
+
+Sutun adi: vs 
+$ortalama
+[1] 0.4375
+
+$medyan
+[1] 0
+
+$s_sapma
+[1] 0.5040161
+
+$min
+[1] 0
+
+$maks
+[1] 1
+
+Sutun adi: am 
+$ortalama
+[1] 0.40625
+
+$medyan
+[1] 0
+
+$s_sapma
+[1] 0.4989909
+
+$min
+[1] 0
+
+$maks
+[1] 1
+
+Sutun adi: gear 
+$ortalama
+[1] 3.6875
+
+$medyan
+[1] 4
+
+$s_sapma
+[1] 0.7378041
+
+$min
+[1] 3
+
+$maks
+[1] 5
+
+Sutun adi: carb 
+$ortalama
+[1] 2.8125
+
+$medyan
+[1] 2
+
+$s_sapma
+[1] 1.6152
+
+$min
+[1] 1
+
+$maks
+[1] 8</code></pre>
+</div>
+</div>
+<p>Apply İle Farklı Bir Yaklaşım</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(mtcars, <span class="dv">2</span>, my_summary_stats)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$mpg
+$mpg$ortalama
+[1] 20.09062
+
+$mpg$medyan
+[1] 19.2
+
+$mpg$s_sapma
+[1] 6.026948
+
+$mpg$min
+[1] 10.4
+
+$mpg$maks
+[1] 33.9
+
+
+$cyl
+$cyl$ortalama
+[1] 6.1875
+
+$cyl$medyan
+[1] 6
+
+$cyl$s_sapma
+[1] 1.785922
+
+$cyl$min
+[1] 4
+
+$cyl$maks
+[1] 8
+
+
+$disp
+$disp$ortalama
+[1] 230.7219
+
+$disp$medyan
+[1] 196.3
+
+$disp$s_sapma
+[1] 123.9387
+
+$disp$min
+[1] 71.1
+
+$disp$maks
+[1] 472
+
+
+$hp
+$hp$ortalama
+[1] 146.6875
+
+$hp$medyan
+[1] 123
+
+$hp$s_sapma
+[1] 68.56287
+
+$hp$min
+[1] 52
+
+$hp$maks
+[1] 335
+
+
+$drat
+$drat$ortalama
+[1] 3.596563
+
+$drat$medyan
+[1] 3.695
+
+$drat$s_sapma
+[1] 0.5346787
+
+$drat$min
+[1] 2.76
+
+$drat$maks
+[1] 4.93
+
+
+$wt
+$wt$ortalama
+[1] 3.21725
+
+$wt$medyan
+[1] 3.325
+
+$wt$s_sapma
+[1] 0.9784574
+
+$wt$min
+[1] 1.513
+
+$wt$maks
+[1] 5.424
+
+
+$qsec
+$qsec$ortalama
+[1] 17.84875
+
+$qsec$medyan
+[1] 17.71
+
+$qsec$s_sapma
+[1] 1.786943
+
+$qsec$min
+[1] 14.5
+
+$qsec$maks
+[1] 22.9
+
+
+$vs
+$vs$ortalama
+[1] 0.4375
+
+$vs$medyan
+[1] 0
+
+$vs$s_sapma
+[1] 0.5040161
+
+$vs$min
+[1] 0
+
+$vs$maks
+[1] 1
+
+
+$am
+$am$ortalama
+[1] 0.40625
+
+$am$medyan
+[1] 0
+
+$am$s_sapma
+[1] 0.4989909
+
+$am$min
+[1] 0
+
+$am$maks
+[1] 1
+
+
+$gear
+$gear$ortalama
+[1] 3.6875
+
+$gear$medyan
+[1] 4
+
+$gear$s_sapma
+[1] 0.7378041
+
+$gear$min
+[1] 3
+
+$gear$maks
+[1] 5
+
+
+$carb
+$carb$ortalama
+[1] 2.8125
+
+$carb$medyan
+[1] 2
+
+$carb$s_sapma
+[1] 1.6152
+
+$carb$min
+[1] 1
+
+$carb$maks
+[1] 8</code></pre>
 </div>
 </div>
 </section>
-<section id="b" class="level2">
-<h2 class="anchored" data-anchor-id="b">(b)</h2>
+<section id="c-boş-değerler-ile-mücadele" class="level2">
+<h2 class="anchored" data-anchor-id="c-boş-değerler-ile-mücadele">(c) Boş Değerler ile Mücadele</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(na_example)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(na_example)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "integer"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(na_example))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 145</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>na_example[<span class="fu">is.na</span>(na_example)] <span class="ot">&lt;-</span> <span class="dv">2025</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(na_example)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1]    2    1    3    2    1    3    1    4    3    2    2 2025    2    2
+  [15]    1    4 2025    1    1    2    1    2    2    1    2    5 2025    2
+  [29]    2    3    1    2    4    1    1    1    4    5    2    3    4    1
+  [43]    2    4    1    1    2    1    5 2025 2025 2025    1    1    5    1
+  [57]    3    1 2025    4    4    7    3    2 2025 2025    1 2025    4    1
+  [71]    2    2    3    2    1    2    2    4    3    4    2    3    1    3
+  [85]    2    1    1    1    3    1 2025    3    1    2    2    1    2    2
+  [99]    1    1    4    1    1    2    3    3    2    2    3    3    3    4
+ [113]    1    1    1    2 2025    4    3    4    3    1    2    1 2025 2025
+ [127] 2025 2025    1    5    1    2    1    3    5    3    2    2 2025 2025
+ [141] 2025 2025    3    5    3    1    1    4    2    4    3    3 2025    2
+ [155]    3    2    6 2025    1    1    2    2    1    3    1    1    5 2025
+ [169] 2025    2    4 2025    2    5    1    4    3    3 2025    4    3    1
+ [183]    4    1    1    3    1    1 2025 2025    3    5    2    2    2    3
+ [197]    1    2    2    3    2    1 2025    2 2025    1 2025 2025    2    1
+ [211]    1 2025    3 2025    1    2    2    1    3    2    2    1    1    2
+ [225]    3    1    1    1    4    3    4    2    2    1    4    1 2025    5
+ [239]    1    4 2025    3 2025 2025    1    1    5    2    3    3    2    4
+ [253] 2025    3    2    5 2025    2    3    4    6    2    2    2 2025    2
+ [267] 2025    2 2025    3    3    2    2    4    3    1    4    2 2025    2
+ [281]    4 2025    6    2    3    1 2025    2    2 2025    1    1    3    2
+ [295]    3    3    1 2025    1    4    2    1    1    3    2    1    2    3
+ [309]    1 2025    2    3    3    2    1    2    3    5    5    1    2    3
+ [323]    3    1 2025 2025    1    2    4 2025    2    1    1    1    3    2
+ [337]    1    1    3    4 2025    1    2    1    1    3    3 2025    1    1
+ [351]    3    5    3    2    3    4    1    4    3    1 2025    2    1    2
+ [365]    2    1    2    2    6    1    2    4    5 2025    3    4    2    1
+ [379]    1    4    2    1    1    1    1    2    1    4    4    1    3 2025
+ [393]    3    3 2025    2 2025    1    2    1    1    4    2    1    4    4
+ [407] 2025    1    2 2025    3    2    2    2    1    4    3    6    1    2
+ [421]    3    1    3    2    2    2    1    1    3    2    1    1    1    3
+ [435]    2    2 2025    4    4    4    1    1 2025    4    3 2025    1    3
+ [449]    1    3    2    4    2    2    2    3    2    1    4    3 2025    1
+ [463]    4    3    1    3    2 2025    3 2025    1    3    1    4    1    1
+ [477]    1    2    4    3    1    2    2    2    3    2    3    1    1 2025
+ [491]    3    2    1    1    2 2025    2    2    2    3    3    1    1    2
+ [505] 2025    1    2    1    1    3    3    1    3    1    1    1    1    1
+ [519]    2    5    1    1    2    2    1    1 2025    1    4    1    2    4
+ [533]    1    3    2 2025    1    1 2025    2    1    1    4    2    3    3
+ [547]    1    5    3    1    1    2 2025    1    1    3    1    3    2    4
+ [561] 2025    2    3    2    1    2    1    1    1    2    2    3    1    5
+ [575]    2 2025    2 2025    3    2    2    2    1    5    3    2    3    1
+ [589] 2025    3    1    2    2    2    1    2    2    4 2025    6    1    2
+ [603] 2025    1    1    2    2    3 2025    3    2    3    3    4    2 2025
+ [617]    2 2025    4 2025    1    1    2    2    3    1    1    1    3 2025
+ [631]    2    5 2025    7    1 2025    4    3    3    1 2025    1    1    1
+ [645]    1    3    2    4    2    2    3 2025 2025    1    4    3    2    2
+ [659]    2    3    2    4    2    2    4 2025 2025 2025    6    3    3    1
+ [673]    4    4    2    1 2025    1    6 2025    3    3    2    1    1    6
+ [687] 2025    1    5    1 2025    2    6    2 2025    4    1    3    1    2
+ [701] 2025    1    1    3    1    2    4    2    1    3    2    4    3    2
+ [715]    2    1    1    5    6    4    2    2    2    2    4 2025    1    2
+ [729]    2    2    2    4    5 2025 2025 2025    4    3    3    3    2    4
+ [743]    2    4 2025 2025 2025 2025    2    1 2025    2    4    3    2 2025
+ [757]    2    3    1    3    4 2025    1    2    1    2 2025    3    1    2
+ [771]    1    2    1    2    1    2    2    2    2    1    1    3    3    1
+ [785]    3    4    3 2025 2025    4    2    3    2    1    3    2    4    2
+ [799]    2    3    1    2    4    3    3    4 2025    1    4    2    1    1
+ [813]    1    3    1    5    2    2    4    2 2025    1    3    1    2 2025
+ [827]    1    2    1    2    1 2025    1    3    2    3    2 2025    2    1
+ [841]    4    2 2025 2025 2025    2    4    2 2025 2025    3    1 2025    5
+ [855]    5    2    2    2 2025    2    1    3    1    3    2    4    2    4
+ [869] 2025    4    1    2    3    2    3    3    2    3    2    2    2    1
+ [883]    3    2    4    2 2025    3    3    2    2 2025 2025    3    2    1
+ [897]    2    4    1    1    1    1    4    3    2 2025    3    2 2025    1
+ [911] 2025    3    2    1    1    1    2 2025    2    2    3    3    2 2025
+ [925] 2025    4    5    2    2    2    1    2    3    1    3    3    4    3
+ [939] 2025    1    1    1 2025    4    3    5    1    1    2 2025    2    2
+ [953]    2    2    5    2    2    3    1    2    3 2025    1    2 2025 2025
+ [967]    2 2025    3    1    1    2    5    3    5    1    1    4 2025    2
+ [981]    1    3    1    1    2    4    3    3    3 2025    1    1    2    2
+ [995]    1    1    2    2 2025    2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>count_2025 <span class="ot">&lt;-</span> <span class="fu">sum</span>(na_example<span class="sc">==</span> <span class="dv">2025</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>sum(is.na(na_example))</p>
 
 
 </section>
