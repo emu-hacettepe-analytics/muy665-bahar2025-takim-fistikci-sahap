@@ -2,14 +2,9 @@
 title: "Çalışma 2"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
-
-esen
-
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
-
 ## (a)Video Özeti Yazılacak
+
+*özet yazılacak yer*
 
 ## (b) Fonksiyonlar ve Döngüler ile Verileri Özetleme
 
@@ -80,5 +75,3 @@ print(na_example)
 count_2025 <- sum(na_example== 2025)
 
 ```
-
-sum(is.na(na_example))
