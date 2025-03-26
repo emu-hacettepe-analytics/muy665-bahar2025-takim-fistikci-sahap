@@ -4,7 +4,7 @@ title: "Çalışma 2"
 
 ## (a)Video Özeti Yazılacak
 
-*özet yazılacak yer*
+*özet yazılacak yer* ffff
 
 ## (b) Fonksiyonlar ve Döngüler ile Verileri Özetleme
 
