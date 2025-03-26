@@ -17,4 +17,3 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 5.  [Osman ÖZKAL](/takim/osman.qmd "Osman ÖZKAL")
 
 6.  [Ömer Ayberk KESGİN](/takim/ayberk.qmd "Ömer Ayberk KESGİN")
----

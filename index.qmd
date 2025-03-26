@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Kodlar Vadisi"
+  title: "FISTIKÇI ŞAHAP"
   navbar:
     search: true
     left:
@@ -40,7 +40,8 @@ website:
         - takim/cansu.qmd
         - takim/ugur.qmd  
         - takim/yesim.qmd
-        - takim/semanurdemirtas.qmd 
+        - takim/ayberk.qmd 
+        - takim/osman.qmd
         
         
   page-navigation: true
