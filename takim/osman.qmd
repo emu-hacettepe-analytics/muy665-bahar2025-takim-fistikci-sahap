@@ -1,5 +1,5 @@
 ---
-title: "ESEN ERTÜRK"
+title: "Osman ÖZKAL"
 ---
 
 ![](images/Resim3.jpg){fig-align="center"}
@@ -35,4 +35,4 @@ Python, SAP, jira, Excel, Power BI
 
 Yüzme, Seramik, Voleybol, Seyahat Etmek
 
-<https://www.linkedin.com/in/esen-ert%C3%BCrk-107800b5/?originalSubdomain=tr>
+

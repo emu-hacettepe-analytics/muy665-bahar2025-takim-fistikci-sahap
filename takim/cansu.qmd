@@ -2,7 +2,7 @@
 title: "Cansu Dursun Avcı"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"} [Özgeçmişimi İndir](uyeadi.pdf) [LinkedIn Profilim](https://www.linkedin.com/in/kullaniciadi/) ![Adınız Soyadınız](uyeadi.jpg)
+![](images/WhatsApp Image 2025-03-26 at 22.13.46.jpeg){fig-align="center" width="173"}
 
 # Eğitim
 
@@ -22,18 +22,6 @@ title: "Cansu Dursun Avcı"
 1.  Firma Ertunk Traktör, pozisyon kalite kontrol, yıl 2017
 
 2.  Firma Devlet Demiryolları, pozisyon kalite kontrol, yıl 2016
-
-# Projeler
-
-1.  NA
-
-# Yayınlar
-
-1.  NA
-
-# Yetkinlikler
-
-R
 
 # Hobiler
 
