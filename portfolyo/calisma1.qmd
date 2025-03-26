@@ -1,16 +1,5 @@
----
-title: "Çalışma 1"
----
+#### ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+## title: "Çalışma 1"
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
-
-## (a)
-
-```{r}
-1 + 1
-```
-
-## (b)
+**"1. video icin özet"**\

@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Takım: XXX",
+    "title": "Takım: fistikci sahap",
     "section": "",
     "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için için bizi takipte kalın."
   },
@@ -192,37 +192,37 @@
   {
     "objectID": "index.html#proje-adı",
     "href": "index.html#proje-adı",
-    "title": "Takım: XXX",
+    "title": "Takım: fistikci sahap",
     "section": "Proje Adı",
     "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
   },
   {
     "objectID": "index.html#proje-konusu",
     "href": "index.html#proje-konusu",
-    "title": "Takım: XXX",
+    "title": "Takım: fistikci sahap",
     "section": "Proje Konusu",
     "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
   },
   {
     "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
     "href": "index.html#veri-seti-hakkında-özet-bilgi",
-    "title": "Takım: XXX",
+    "title": "Takım: fistikci sahap",
     "section": "Veri Seti Hakkında Özet Bilgi",
     "text": "Veri Seti Hakkında Özet Bilgi"
   },
   {
     "objectID": "index.html#sonuçlar",
     "href": "index.html#sonuçlar",
-    "title": "Takım: XXX",
+    "title": "Takım: fistikci sahap",
     "section": "Sonuçlar",
     "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
   },
   {
     "objectID": "index.html#takım-üyeleri",
     "href": "index.html#takım-üyeleri",
-    "title": "Takım: XXX",
+    "title": "Takım: fistikci sahap",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nCansu\nEsen\nYeşim\nUğur\nOsman\nAyberk"
   },
   {
     "objectID": "portfolyo.html",
@@ -313,7 +313,7 @@
     "href": "portfolyo/calisma2.html",
     "title": "Çalışma 2",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nesen\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
     "crumbs": [
       "Porfolyo",
       "Çalışma 2"
@@ -322,12 +322,12 @@
   {
     "objectID": "portfolyo/calisma1.html",
     "href": "portfolyo/calisma1.html",
-    "title": "Çalışma 1",
+    "title": "XX Takımı Analitik Labı",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "text": "—\ntitle: “Çalışma 1”\n\n“1. video için özet”\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Porfolyo",
-      "Çalışma 1"
+      "---"
     ]
   },
   {
@@ -433,12 +433,12 @@
   {
     "objectID": "takim/dusantadic.html",
     "href": "takim/dusantadic.html",
-    "title": "Dusan Tadic",
+    "title": "Cansu Dursun Avcı",
     "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
+    "text": "Özgeçmişimi İndir LinkedIn Profilim",
     "crumbs": [
       "Takım Üyeleri",
-      "Dusan Tadic"
+      "Cansu Dursun Avcı"
     ]
   },
   {
@@ -488,23 +488,23 @@
   {
     "objectID": "takim/edindzeko.html#işler",
     "href": "takim/edindzeko.html#işler",
-    "title": "Edin_Džeko",
+    "title": "ESEN ERTÜRK",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
+    "text": "İşler\n\nAksa Çoruh Elektrik Dağıtım, Müşteri Operasyonları Uzmanu 2018-2020\nEnerjisa Başkent Elektrik Dağıtım, Kaçak Tahakkuk Takım Yöneticisi, 2020- devam",
     "crumbs": [
       "Takım Üyeleri",
-      "Edin_Džeko"
+      "ESEN ERTÜRK"
     ]
   },
   {
     "objectID": "takim/edindzeko.html#stajlar",
     "href": "takim/edindzeko.html#stajlar",
-    "title": "Edin_Džeko",
+    "title": "ESEN ERTÜRK",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "text": "Stajlar\n\nAksa Enerji, 2016\nOdaş Enerji, 2018",
     "crumbs": [
       "Takım Üyeleri",
-      "Edin_Džeko"
+      "ESEN ERTÜRK"
     ]
   },
   {
@@ -532,23 +532,231 @@
   {
     "objectID": "takim/dusantadic.html#işler",
     "href": "takim/dusantadic.html#işler",
-    "title": "Dusan Tadic",
+    "title": "Cansu Dursun Avcı",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
+    "text": "İşler\n\nFirma Roketsan, pozisyon Klaite kontrol, yıl 2019\nFirma ODTÜ, pozisyon kalite kontrol, yıl 2018",
     "crumbs": [
       "Takım Üyeleri",
-      "Dusan Tadic"
+      "Cansu Dursun Avcı"
     ]
   },
   {
     "objectID": "takim/dusantadic.html#stajlar",
     "href": "takim/dusantadic.html#stajlar",
-    "title": "Dusan Tadic",
+    "title": "Cansu Dursun Avcı",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "text": "Stajlar\n\nFirma Ertunk Traktör, pozisyon kalite kontrol, yıl 2017\nFirma Devlet Demiryolları, pozisyon kalite kontrol, yıl 2016",
     "crumbs": [
       "Takım Üyeleri",
-      "Dusan Tadic"
+      "Cansu Dursun Avcı"
+    ]
+  },
+  {
+    "objectID": "takim/ugur.html#işler",
+    "href": "takim/ugur.html#işler",
+    "title": "ugur sukru ceran",
+    "section": "İşler",
+    "text": "İşler\n\nFirma ASELSAN , pozisyon Uretim Test Analiz Muhendisi, yıl 2021\nFirma VESTEL, pozisyon EMC Test Muhendisi, yıl 2018-2021",
+    "crumbs": [
+      "Takım Üyeleri",
+      "ugur sukru ceran"
+    ]
+  },
+  {
+    "objectID": "takim/ugur.html#stajlar",
+    "href": "takim/ugur.html#stajlar",
+    "title": "ugur sukru ceran",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma ASELSAN, pozisyon Stajyer, yıl 2017\nFirma NETAS, pozisyon Stajyer, yıl 2016",
+    "crumbs": [
+      "Takım Üyeleri",
+      "ugur sukru ceran"
+    ]
+  },
+  {
+    "objectID": "docs/project.html",
+    "href": "docs/project.html",
+    "title": "Project X",
+    "section": "",
+    "text": "Welcome to my project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
+  },
+  {
+    "objectID": "docs/project.html#data-source",
+    "href": "docs/project.html#data-source",
+    "title": "Project X",
+    "section": "2.1 Data Source",
+    "text": "2.1 Data Source\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#general-information-about-data",
+    "href": "docs/project.html#general-information-about-data",
+    "title": "Project X",
+    "section": "2.2 General Information About Data",
+    "text": "2.2 General Information About Data\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#reason-of-choice",
+    "href": "docs/project.html#reason-of-choice",
+    "title": "Project X",
+    "section": "2.3 Reason of Choice",
+    "text": "2.3 Reason of Choice\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#preprocessing",
+    "href": "docs/project.html#preprocessing",
+    "title": "Project X",
+    "section": "2.4 Preprocessing",
+    "text": "2.4 Preprocessing\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#exploratory-data-analysis",
+    "href": "docs/project.html#exploratory-data-analysis",
+    "title": "Project X",
+    "section": "3.1 Exploratory Data Analysis",
+    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#trend-analysis",
+    "href": "docs/project.html#trend-analysis",
+    "title": "Project X",
+    "section": "3.2 Trend Analysis",
+    "text": "3.2 Trend Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#model-fitting",
+    "href": "docs/project.html#model-fitting",
+    "title": "Project X",
+    "section": "3.3 Model Fitting",
+    "text": "3.3 Model Fitting\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#results",
+    "href": "docs/project.html#results",
+    "title": "Project X",
+    "section": "3.4 Results",
+    "text": "3.4 Results\nxxxxxx"
+  },
+  {
+    "objectID": "takim/yesim.html#işler",
+    "href": "takim/yesim.html#işler",
+    "title": "Yesim Gurer Ceran",
+    "section": "İşler",
+    "text": "İşler\n\nFirma TUSAŞ, pozisyon Tedarik ve Sözleşme Kıdemli Uzman, yıl 2025- Devam\nFirma Enerjisa, pozisyon Malzeme ve Kalite Kontrol Uzmanı, yıl 2022-2024\nFirma Osmangazi Elektrik Dağıtım A.Ş., pozisyon Proje Mühendisi, yıl 2019-2022\nFirma Vestel, pozisyon Laboratuvar Mühendisi, yıl 2018-2019",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Yesim Gurer Ceran"
+    ]
+  },
+  {
+    "objectID": "takim/yesim.html#stajlar",
+    "href": "takim/yesim.html#stajlar",
+    "title": "Yesim Gurer Ceran",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma Aselsan, pozisyon Stajyer, yıl 2018\nFirma Siemens, pozisyon Stajyer, yıl 2016\nFirma Mercedes Benz, pozisyon Stajyer, yıl 2016\nFirma Seyitömer EÜAŞ, pozisyon Stajyer, yıl 2015",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Yesim Gurer Ceran"
+    ]
+  },
+  {
+    "objectID": "takim/esenerturk.html#işler",
+    "href": "takim/esenerturk.html#işler",
+    "title": "ESEN ERTÜRK",
+    "section": "İşler",
+    "text": "İşler\n\nAksa Çoruh Elektrik Dağıtım, Müşteri Operasyonları Uzmanu 2018-2020\nEnerjisa Başkent Elektrik Dağıtım, Kaçak Tahakkuk Takım Yöneticisi, 2020- devam"
+  },
+  {
+    "objectID": "takim/esenerturk.html#stajlar",
+    "href": "takim/esenerturk.html#stajlar",
+    "title": "ESEN ERTÜRK",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nAksa Enerji, 2016\nOdaş Enerji, 2018"
+  },
+  {
+    "objectID": "takim/cansudursunavci.html",
+    "href": "takim/cansudursunavci.html",
+    "title": "Cansu Dursun Avcı",
+    "section": "",
+    "text": "Özgeçmişimi İndir LinkedIn Profilim"
+  },
+  {
+    "objectID": "takim/cansudursunavci.html#işler",
+    "href": "takim/cansudursunavci.html#işler",
+    "title": "Cansu Dursun Avcı",
+    "section": "İşler",
+    "text": "İşler\n\nFirma Roketsan, pozisyon Klaite kontrol, yıl 2019\nFirma ODTÜ, pozisyon kalite kontrol, yıl 2018"
+  },
+  {
+    "objectID": "takim/cansudursunavci.html#stajlar",
+    "href": "takim/cansudursunavci.html#stajlar",
+    "title": "Cansu Dursun Avcı",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma Ertunk Traktör, pozisyon kalite kontrol, yıl 2017\nFirma Devlet Demiryolları, pozisyon kalite kontrol, yıl 2016"
+  },
+  {
+    "objectID": "takim/esen.html#işler",
+    "href": "takim/esen.html#işler",
+    "title": "ESEN ERTÜRK",
+    "section": "İşler",
+    "text": "İşler\n\nAksa Çoruh Elektrik Dağıtım, Müşteri Operasyonları Uzmanu 2018-2020\nEnerjisa Başkent Elektrik Dağıtım, Kaçak Tahakkuk Takım Yöneticisi, 2020- devam",
+    "crumbs": [
+      "Takım Üyeleri",
+      "ESEN ERTÜRK"
+    ]
+  },
+  {
+    "objectID": "takim/esen.html#stajlar",
+    "href": "takim/esen.html#stajlar",
+    "title": "ESEN ERTÜRK",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nAksa Enerji, 2016\nOdaş Enerji, 2018",
+    "crumbs": [
+      "Takım Üyeleri",
+      "ESEN ERTÜRK"
+    ]
+  },
+  {
+    "objectID": "takim/cansu.html",
+    "href": "takim/cansu.html",
+    "title": "Cansu Dursun Avcı",
+    "section": "",
+    "text": "Özgeçmişimi İndir LinkedIn Profilim",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Cansu Dursun Avcı"
+    ]
+  },
+  {
+    "objectID": "takim/cansu.html#işler",
+    "href": "takim/cansu.html#işler",
+    "title": "Cansu Dursun Avcı",
+    "section": "İşler",
+    "text": "İşler\n\nFirma Roketsan, pozisyon Klaite kontrol, yıl 2019\nFirma ODTÜ, pozisyon kalite kontrol, yıl 2018",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Cansu Dursun Avcı"
+    ]
+  },
+  {
+    "objectID": "takim/cansu.html#stajlar",
+    "href": "takim/cansu.html#stajlar",
+    "title": "Cansu Dursun Avcı",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma Ertunk Traktör, pozisyon kalite kontrol, yıl 2017\nFirma Devlet Demiryolları, pozisyon kalite kontrol, yıl 2016",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Cansu Dursun Avcı"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#title-çalışma-1",
+    "href": "portfolyo/calisma1.html#title-çalışma-1",
+    "title": "FISTIKCI SAHAP",
+    "section": "title: “Çalışma 1”",
+    "text": "title: “Çalışma 1”\n“1. video icin özet”",
+    "crumbs": [
+      "Porfolyo",
+      "---"
     ]
   }
 ]

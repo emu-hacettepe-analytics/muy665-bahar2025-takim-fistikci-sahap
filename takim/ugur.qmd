@@ -2,7 +2,6 @@
 title: "ugur sukru ceran"
 ---
 
-
 ![](/assets/images/vesikalik.jpeg){fig-align="center"}
 
 # Eğitim
@@ -32,9 +31,9 @@ title: "ugur sukru ceran"
 
 1.  Ceran, U., Dogan, U., Arslan, K. (2021) “Examination of the RF Output Power on Electromagnetic Susceptibility Tests of the Radio Equipment”, Conference Paper, Publisher: IEEE
 
-2. Ceran, U., Dogan, U., Keskin, C. (2020) “Evaluation of the Effects of Wanted Signal Mean Power and Blocking Signal Power Levels on Receiver Blocking Test”, Conference Paper, Publisher: IEEE
+2.  Ceran, U., Dogan, U., Keskin, C. (2020) “Evaluation of the Effects of Wanted Signal Mean Power and Blocking Signal Power Levels on Receiver Blocking Test”, Conference Paper, Publisher: IEEE
 
-3. Ceran, U., Alan, E., Keskin, C., Kiraz, G., Dogan, U. (2019) “Experimental Analysis of Radiated Emission Limits Regarding Test Facilities According to EN 55032”, Conference Paper, Publisher: IEEE
+3.  Ceran, U., Alan, E., Keskin, C., Kiraz, G., Dogan, U. (2019) “Experimental Analysis of Radiated Emission Limits Regarding Test Facilities According to EN 55032”, Conference Paper, Publisher: IEEE
 
 # Yetkinlikler
 

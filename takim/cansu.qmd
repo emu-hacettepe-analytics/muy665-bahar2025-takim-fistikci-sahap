@@ -2,10 +2,7 @@
 title: "Cansu Dursun Avcı"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
-[Özgeçmişimi İndir](uyeadi.pdf)
-[LinkedIn Profilim](https://www.linkedin.com/in/kullaniciadi/)
-![Adınız Soyadınız](uyeadi.jpg)
+![](/assets/images/vesikalik.jpeg){fig-align="center"} [Özgeçmişimi İndir](uyeadi.pdf) [LinkedIn Profilim](https://www.linkedin.com/in/kullaniciadi/) ![Adınız Soyadınız](uyeadi.jpg)
 
 # Eğitim
 
@@ -28,7 +25,7 @@ title: "Cansu Dursun Avcı"
 
 # Projeler
 
-1. NA
+1.  NA
 
 # Yayınlar
 

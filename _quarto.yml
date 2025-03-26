@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "XX Takımı Analitik Labı"
+  title: "FISTIKCI SAHAP"
   navbar:
     search: true
     left:
@@ -36,16 +36,16 @@ website:
       search: true
       contents:
         - takim.qmd
-        - takim/dusantadic.qmd
-        - takim/edindzeko.qmd
-        - takim/fred.qmd  
-        - takim/szymanski.qmd  
+        - takim/esen.qmd
+        - takim/cansu.qmd
+        - takim/yesim.qmd  
+        - takim/ugur.qmd  
         
         
   page-navigation: true
   back-to-top-navigation: true
   page-footer:
-    center: "EMU Hacettepe MUY665 - 2023-2024 Bahar" 
+    center: "EMU Hacettepe MUY665 - 2024-2025 Bahar" 
     border: true
 format:
   html:
