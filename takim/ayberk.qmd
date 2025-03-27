@@ -2,7 +2,7 @@
 title: "Omer Ayberk KESGIN"
 ---
 
-<<<<<<< HEAD
+
 ![](images/AYBERKKESGIN.jpg){fig-align="center"}
 
 
