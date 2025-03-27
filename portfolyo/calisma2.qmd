@@ -2,6 +2,31 @@
 title: "Çalışma "
 ---
 
+(a)Endüstri Mühendisliği ve Veri Bilimi Uygulamaları
+
+1. Giriş
+
+Mustafa Hoca, Boğaziçi Üniversitesi Endüstri Mühendisliği bölümünde öğretim üyesi ve aynı zamanda bir yazılım danışmanlık şirketinin kurucusudur. Lisans ve doktorasını ODTÜ ve Arizona State Üniversitesi'nde tamamlamış, veri bilimi, büyük ölçekli veri madenciliği, zaman serisi analizi ve optimizasyon alanlarında çalışmalar yapmaktadır. Bu raporda, hocanın endüstri mühendisliği ve veri bilimi kesişimindeki deneyimleri, çözülen problemler ve öğrencilere tavsiyeleri ele alınmaktadır.
+
+2. Gelişme
+
+2.1. Endüstri Mühendisliği ve Veri Bilimi Endüstri mühendisleri, problem çözme odaklı bir eğitim alırlar. Matematiksel modelleme, simülasyon ve optimizasyon gibi araçları kullanarak karmaşık sistemleri analiz ederler. Son yıllarda, veri analizi ve makine öğrenmesi yöntemleri müfredata eklenmiştir. Örneğin, "Veri Analitiği" dersinde R veya Python gibi araçlarla veri düzenleme, görselleştirme ve tahmin modelleri üzerine çalışmalar yapılmaktadır.
+
+2.2. Uygulamalı Problemler ve Çözümler * Kereste Yamulması Tahmini: Bir orman endüstrisi şirketi için kerestelerin kurutma sonrası yamulmasını öngören bir model geliştirilmiştir. Bu projede, kerestelerin fiziksel özellikleri (budak noktaları, kesit açıları) dijital görüntülerden çıkarılarak makine öğrenmesi modellerine entegre edilmiştir. Model, yamukluğun nedenlerini açıklayabilme ve önleyici aksiyonlar alabilme yeteneğiyle işletmeye ciddi kazanç sağlamıştır. * Elektrik Tüketim Tahmini: Enerji sektöründe, elektrik piyasasındaki dengesizlik maliyetlerini azaltmak için saatlik tüketim tahmin modelleri kullanılmıştır. Hava durumu, özel günler ve tarihsel verilerle beslenen modeller, şirketlerin daha doğru planlama yapmasını sağlamıştır. * Online Perakende Sıralama Algoritmaları: Bir e-ticaret platformunda, ürün sıralamasını optimize etmek için müşteri davranışları (tıklama, satın alma, favoriye ekleme) ve Google Trends verileri kullanılmıştır. Reinforcement learning yaklaşımıyla daha etkili sıralama politikaları geliştirilmiştir.
+
+2.3. Geleneksel ve Modern Yaklaşımlar * Geleneksel Öğrenme: Problemlerin kök nedenlerini anlamaya ve açıklanabilir modeller kurmaya odaklanır. Örneğin, doğrusal regresyon veya karar ağaçları gibi yöntemlerle tahminler yapılır. * Derin Öğrenme: Yapısal olmayan veriler (resim, ses, metin) için daha uygundur. Ancak, yorumlanabilirlik ve veri ihtiyacı gibi zorlukları vardır.
+
+3. Sonuç ve Öneriler
+
+3.1. Temel Çıkarımlar * Veri bilimi ve endüstri mühendisliği, karar verme süreçlerini iyileştirmede güçlü bir sinerji oluşturur. * Açıklanabilir modeller, iş dünyasında patronlara ve paydaşlara anlatım kolaylığı sağlar. * Reinforcement learning gibi modern teknikler, dinamik ortamlarda (e-ticaret, enerji piyasası) etkili sonuçlar verebilir.
+
+3.2. Öğrencilere Tavsiyeleri * Uygulamalar: Kaggle gibi platformlarda pratik, gerçek hayat problemlerine de odaklanma, * Akademik Destek: Yüksek lisans, özellikle istatistiksel öğrenme ve optimizasyon konularında derinleşme, * Kitap Önerisi: An Introduction to Statistical Learning, * Network: Hocalarla ve sektör profesyonelleri ile iletişim gibi tavsiyelerde bulunmaktadır.
+
+3.3. Gelecek Perspektifi Yapay zeka araçları (ChatGPT gibi) bazı süreçleri otomatikleştirse de, problem tanımlama ve veriyi anlama becerileri endüstri mühendislerinin önemini koruyacaktır. Özellikle "prescriptive analytics" gibi alanlarda, optimizasyon ve makine öğrenmesinin birleşimiyle yeni çözümler geliştirilebilir.
+
+Not: Özette chatgpt kullanılmamıştır tamamen ekibimize ait cümlelerdir.
+---
+
 ## (a)Endüstri Mühendisliği ve Veri Bilimi Uygulamaları
 
 **1. Giriş**
