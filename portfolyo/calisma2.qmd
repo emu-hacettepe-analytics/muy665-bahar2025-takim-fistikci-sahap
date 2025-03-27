@@ -2,7 +2,7 @@
 title: "Çalışma 2"
 ---
 
-## (a)Endüstri Mühendisliği ve Veri Bilimi Uygulamaları 
+## (a)Endüstri Mühendisliği ve Veri Bilimi Uygulamaları
 
 **1. Giriş**
 
@@ -23,6 +23,8 @@ Mustafa Hoca, Boğaziçi Üniversitesi Endüstri Mühendisliği bölümünde ö�
 3.2. Öğrencilere Tavsiyeleri \* Uygulamalar: Kaggle gibi platformlarda pratik, gerçek hayat problemlerine de odaklanma, \* Akademik Destek: Yüksek lisans, özellikle istatistiksel öğrenme ve optimizasyon konularında derinleşme, \* Kitap Önerisi: An Introduction to Statistical Learning, \* Network: Hocalarla ve sektör profesyonelleri ile iletişim gibi tavsiyelerde bulunmaktadır.
 
 3.3. Gelecek Perspektifi Yapay zeka araçları (ChatGPT gibi) bazı süreçleri otomatikleştirse de, problem tanımlama ve veriyi anlama becerileri endüstri mühendislerinin önemini koruyacaktır. Özellikle "prescriptive analytics" gibi alanlarda, optimizasyon ve makine öğrenmesinin birleşimiyle yeni çözümler geliştirilebilir.
+
+Not: Özette chatgpt kullanılmamıştır tamamen ekibimize ait cümlelerdir.
 
 ## (b) Fonksiyonlar ve Döngüler ile Verileri Özetleme
 
