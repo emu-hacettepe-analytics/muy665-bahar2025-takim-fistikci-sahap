@@ -1,35 +1,37 @@
 ---
-title: "ugur sukru ceran"
+title: "ugur"
+format: html
 ---
-
-![](images/be229806-37fd-4181-bc26-3e1c4e0b4f1a.jfif){fig-align="center" width="248"}
 
 # EDitim
 
--   Lisans, Elektronik ve Haberlesme Muhendisligi, Yildiz Teknik Cniversitesi, TC\<rkiye, 2012 - 2017.
--   YC\<ksek Lisans, Muhendislik Yonetimi, Hacettepe Cniversitesi, TC\<rkiye, 2025 - devam ediyor.
+-   Lisans, Karadeniz Teknik Cniversitesi, TC\<rkiye, 2014 - 2018.
+-   YC\<ksek Lisans, EndC\<stri MC\<hendisliDi, Hacettepe Cniversitesi, TC\<rkiye, 2024 - devam ediyor.
 
 # D0E Deneyimi
 
 ## D0Eler
 
-1.  Firma ASELSAN , pozisyon Uretim Test Analiz Muhendisi, yD1l 2021
+1.  Aksa Coruh Elektrik DaDD1tD1m, MC\<Eteri OperasyonlarD1 Uzmanu 2018-2020
 
-2.  Firma VESTEL, pozisyon EMC Test Muhendisi, yD1l 2018-2021
+2.  Enerjisa BaEkent Elektrik DaDD1tD1m, KaC'ak Tahakkuk TakD1m YC6neticisi, 2020- devam
 
 ## Stajlar
 
-1.  Firma ASELSAN, pozisyon Stajyer, 2017
+1.  Aksa Enerji, 2016
 
-2.  Firma NETAS, pozisyon Stajyer, 2016
+2.  OdaE Enerji, 2018
 
 # Projeler
 
-1.  Personel Takip Sistemi
+1.  TCBD0TAK 1001 FD1rC'asD1z HUB motoru ile sC\<rC\<len elektrikli kaykay
 
-# YayD1nlar
+    # Yetkinlikler
 
--   Keskin C.; Ceran U.; DoDan U. (2020); Evaluation of the Effects of Wanted Signal Mean Power and Blocking Signal Power Levels on Receiver Blocking Test (IEEE; EMC Europe 2020)
--   Alan E.; Keskin C.; Ceran U.; DoDan U.; Kiraz G.(2019); Experimental Analysis of Radiated Emission Limits Regarding Test Facilities According to EN 55032 (IEEE; EMC TC\<rkiye 2019)
--   Ceran U.; DoDan U. Arslan K. Examination of the RF Output Power on Electromagnetic Susceptibility Tests of the Radio Equipment IEEE; EMC Europe 2020)
--   Ceran U.; DoDan U. Arslan K. (2021) Examination of the RF Output Power on Electromagnetic Susceptibility Tests of the Radio Equipment (IEEE; EMC Europe 2021)
+Python, SAP, jira, Excel, Power BI
+
+# Hobiler
+
+YC\<zme, Seramik, Voleybol, Seyahat Etmek
+
+<https://www.linkedin.com/in/esen-ert%C3%BCrk-107800b5/?originalSubdomain=tr>
