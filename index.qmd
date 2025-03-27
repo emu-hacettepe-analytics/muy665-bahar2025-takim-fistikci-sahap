@@ -1,62 +1,38 @@
-project:
-  type: website
-  output-dir: docs
+---
+title: "FISTIKÇI ŞAHAP"
+sidebar: false 
+---
 
-website:
-  title: "FISTIKÇI ŞAHAP"
-  navbar:
-    search: true
-    left:
-      - text: Ana Sayfa
-        href: index.qmd
-      - text: Takım
-        href: takim.qmd
-      - text: Portfolyo
-        href: portfolyo.qmd
-      - text: Proje
-        href: proje.qmd
+MUY665-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
+Bu analitik çalışmalarımızı paylaşıyoruz.
 
-            
-    tools:
-      - icon: github
-        href: https://github.com
+Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
 
-  sidebar:
-    - title: "Portfolyo"
-      style: "docked"
-      search: true
-      contents:
-        - portfolyo.qmd
-        - portfolyo/Calisma1/calisma1.qmd
-        - portfolyo/Calisma2/calisma2.qmd  
-        
-    - title: "Takım"
-      style: "docked"
-      search: true
-      contents:
-        - takim.qmd
-        - takim/esen.qmd
-        - takim/cansu.qmd
-        - takim/ugur.qmd  
-        - takim/yesim.qmd
-        - takim/ayberk.qmd 
-        - takim/osman.qmd
-        
-        
-  page-navigation: true
-  back-to-top-navigation: true
-  page-footer:
-    center: "ATİKERİN KATKILARIYLA"
-    border: true
-format:
-  html:
-    toc: true
-    toc-location: left
-    theme: 
-      light: simplex 
-      dark: cyborg
-    css: styles.css
+## Takım Üyeleri
 
+1.  [ESEN ERTÜRK](/takim/esen.qmd "ESEN ERTÜRK")
 
-editor: visual
+2.  [CANSU DURSUN](/takim/cansu.qmd "CANSU DURSUN")
+
+3.  [YEŞİM GÜRER](/takim/yesim.qmd "YEŞİM GÜRER")
+
+4.  [UĞUR CERAN](/takim/ugur.qmd "UĞUR CERAN")
+
+5.  [ÖMER AYBERK KESGİN](/takim/ayberk.qmd "ÖMER AYBERK KESGİN")
+
+6.  [OSMAN ÖZKAL](/takim/osman.qmd "OSMAN ÖZKAL")
+
+## Proje Adı
+
+MUY665-İş Analitiği iyileştirme çalışmaları (örnek)
+
+## Proje Konusu
+
+Örnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
+
+## Veri Seti Hakkında Özet Bilgi
+
+## Sonuçlar
+
+Burada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.

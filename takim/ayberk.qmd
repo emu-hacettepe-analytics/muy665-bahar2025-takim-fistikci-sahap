@@ -2,7 +2,7 @@
 title: "Ömer Ayberk KESGİN"
 ---
 
-![](images/Resim3.jpg){fig-align="center"}
+![](images/Resim3.jpg){fig-align="center" width="240"}
 
 # Eğitim
 

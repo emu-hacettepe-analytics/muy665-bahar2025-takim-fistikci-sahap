@@ -2,7 +2,7 @@
 title: "Osman ÖZKAL"
 ---
 
-![](images/Resim3.jpg){fig-align="center"}
+![](images/Resim3.jpg){fig-align="center" width="198"}
 
 # Eğitim
 
@@ -34,5 +34,3 @@ Python, SAP, jira, Excel, Power BI
 # Hobiler
 
 Yüzme, Seramik, Voleybol, Seyahat Etmek
-
-
