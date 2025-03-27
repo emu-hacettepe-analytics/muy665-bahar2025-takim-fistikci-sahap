@@ -1,5 +1,5 @@
 ---
-title: "Yeşim Gürer Ceran"
+title: "Uğur Şükrü Ceran"
 ---
 
 ![](images/fotoğraf.jpg){fig-align="center"}
