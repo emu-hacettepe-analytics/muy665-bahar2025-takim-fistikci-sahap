@@ -2,7 +2,7 @@
 title: "Yesim Gurer Ceran"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](images/fotoğraf.jpg){fig-align="center"}
 
 # Eğitim
 
