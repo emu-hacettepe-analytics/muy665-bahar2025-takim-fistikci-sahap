@@ -1,11 +1,9 @@
 ---
-title: "Ugur Sukru Ceran"
+title: "Yeşim  Ceran"
 ---
 
-![](images/UGUR.JPG){fig-align="center"}
+![](images/fotoğraf.jpg){fig-align="center"}
 
-# Egitim  
+# Eğitim
 
--   Lisans, Elektronik
-
-# 
+-   Lisans,
