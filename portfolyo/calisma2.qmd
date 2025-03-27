@@ -1,5 +1,5 @@
 ---
-title: "Çalışma 2"
+title: "Çalışma "
 ---
 
 ## (a)Endüstri Mühendisliği ve Veri Bilimi Uygulamaları
