@@ -12,7 +12,7 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 3.  [Yeşim Gürer Ceran](/takim/yesim.qmd)
 
-4.  [Uğur Ceran](/takim/ugur.qmd)
+4.  [Uğur Şükrü Ceran](/takim/ugur.qmd)
 
 5.  [Osman Aksoy ](/takim/osman.qmd)
 
