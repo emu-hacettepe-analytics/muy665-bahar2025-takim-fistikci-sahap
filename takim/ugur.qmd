@@ -1,5 +1,5 @@
 ---
-title: "Yugur sukru ceran"
+title: "ugur sukru ceran"
 ---
 
 ![](images/fotoDraf.jpg){fig-align="center"}
