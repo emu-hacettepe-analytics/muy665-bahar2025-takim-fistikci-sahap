@@ -1,6 +1,6 @@
+<<<<<<< HEAD
 ---
 title: "ugur"
-format: html
 ---
 
 # EDitim
@@ -35,3 +35,30 @@ Python, SAP, jira, Excel, Power BI
 YC\<zme, Seramik, Voleybol, Seyahat Etmek
 
 <https://www.linkedin.com/in/esen-ert%C3%BCrk-107800b5/?originalSubdomain=tr>
+=======
+---
+title: "UDur EC<krC< Ceran"
+---
+
+![](images/be229806-37fd-4181-bc26-3e1c4e0b4f1a-01.jfif){fig-align="center" width="224"}
+
+# EDitim
+
+gg
+
+# D0E Deneyimi
+
+## D0Eler
+
+1.  Aksa Coruh Elektrik DaDD1tD1m, MC<Eteri OperasyonlarD1 Uzmanu 2018-2020
+
+2.  Enerjisa BaEkent Elektrik DaDD1tD1m, KaC'ak Tahakkuk TakD1m YC6neticisi, 2020- devam
+
+## Stajlar
+
+1.  Aksa Enerji, 2016
+
+2.  OdaE Enerji, 2018
+
+# Projeler
+>>>>>>> 3e065f0c91c55901c75510865c645fc105a7c2c7
