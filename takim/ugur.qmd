@@ -1,44 +1,32 @@
 ---
-title: "Uğur Şükrü Ceran"
+title: "ugur sukru ceran"
 ---
 
 ![](/assets/images/vesikalik.jpeg){fig-align="center"}
 
-# Eğitim
+# EDitim
 
--   Lisans, Elektronik ve Haberlesme Muhendisligi, Yildiz Teknik Üniversitesi, Türkiye, 2012 - 2017.
--   Yüksek Lisans, Muhendislik Yonetimi, Hacettepe Üniversitesi, Türkiye, 2025 - devam ediyor.
+-   Lisans, Elektronik ve Haberlesme Muhendisligi, Yildiz Teknik Cniversitesi, TC\<rkiye, 2012 - 2017.
+-   YC\<ksek Lisans, Muhendislik Yonetimi, Hacettepe Cniversitesi, TC\<rkiye, 2025 - devam ediyor.
 
-# İş Deneyimi
+# D0E Deneyimi
 
-## İşler
+## D0Eler
 
-1.  Firma ASELSAN , pozisyon Uretim Test Analiz Muhendisi, yıl 2021
+1.  Firma ASELSAN , pozisyon Uretim Test Analiz Muhendisi, yD1l 2021
 
-2.  Firma VESTEL, pozisyon EMC Test Muhendisi, yıl 2018-2021
+2.  Firma VESTEL, pozisyon EMC Test Muhendisi, yD1l 2018-2021
 
 ## Stajlar
 
-1.  Firma ASELSAN, pozisyon Stajyer, yıl 2017
+1.  Firma ASELSAN, pozisyon Stajyer, yD1l 2017
 
-2.  Firma NETAS, pozisyon Stajyer, yıl 2016
+2.  Firma NETAS, pozisyon Stajyer, yD1l 2016
 
 # Projeler
 
 1.  Personel Takip Sistemi
 
-# Yayınlar
+# YayD1nlar
 
-1.  Ceran, U., Dogan, U., Arslan, K. (2021) “Examination of the RF Output Power on Electromagnetic Susceptibility Tests of the Radio Equipment”, Conference Paper, Publisher: IEEE
-
-2.  Ceran, U., Dogan, U., Keskin, C. (2020) “Evaluation of the Effects of Wanted Signal Mean Power and Blocking Signal Power Levels on Receiver Blocking Test”, Conference Paper, Publisher: IEEE
-
-3.  Ceran, U., Alan, E., Keskin, C., Kiraz, G., Dogan, U. (2019) “Experimental Analysis of Radiated Emission Limits Regarding Test Facilities According to EN 55032”, Conference Paper, Publisher: IEEE
-
-# Yetkinlikler
-
-Matlab, MS Office, Minitab, Autocad
-
-# Hobiler
-
-Muzik
+1.  Ceran, U., Dogan, U., Arslan, K. (2021) b

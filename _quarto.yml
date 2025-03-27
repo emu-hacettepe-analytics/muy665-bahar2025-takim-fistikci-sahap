@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "FISTIKÇI ŞAHAP"
+  title: "XX TakD1mD1 Analitik LabD1"
   navbar:
     search: true
     left:
       - text: Ana Sayfa
         href: index.qmd
-      - text: Takım Üyeleri
+      - text: TakD1m Cyeleri
         href: takim.qmd
       - text: Porfolyo
         href: portfolyo.qmd
@@ -23,7 +23,7 @@ website:
         href: https://github.com
 
   sidebar:
-    - title: "Çalışmalar"
+    - title: "CalD1Emalar"
       style: "docked"
       search: true
       contents:
@@ -31,23 +31,21 @@ website:
         - portfolyo/calisma1.qmd
         - portfolyo/calisma2.qmd  
         
-    - title: "Takım"
+    - title: "TakD1m"
       style: "docked"
       search: true
       contents:
         - takim.qmd
-        - takim/esen.qmd
-        - takim/ugur.qmd
-        - takim/yesim.qmd
-        - takim/cansu.qmd  
-        - takim/osman.qmd 
-        - takim/ayberk.qmd 
+        - takim/dusantadic.qmd
+        - takim/edindzeko.qmd
+        - takim/fred.qmd  
+        - takim/ugur.qmd  
         
         
   page-navigation: true
   back-to-top-navigation: true
   page-footer:
-    center: "EMU Hacettepe MUY665 - 2024-2025 Bahar" 
+    center: "EMU Hacettepe MUY665 - 2023-2024 Bahar" 
     border: true
 format:
   html:
