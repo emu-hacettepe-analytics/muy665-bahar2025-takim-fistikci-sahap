@@ -2,7 +2,11 @@
 title: "ugur sukru ceran"
 ---
 
+<<<<<<< Updated upstream
 [![](images/UGUR.JPG){fig-align="center" width="191"}](https://www.linkedin.com/in/u%C4%9Fur-ceran-24b018a8/)
+=======
+![](/assets/images/vesikalik.jpeg){fig-align="center"}
+>>>>>>> Stashed changes
 
 # Eğitim
 
