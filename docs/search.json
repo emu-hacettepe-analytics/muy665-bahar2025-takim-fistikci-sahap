@@ -240,7 +240,11 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
+<<<<<<< Updated upstream
     "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
+=======
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nEsen ERTÜRK\nCansu DURSUN\nYeşim GÜRER CERAN\nUğur CERAN\nOsman ÖZKAL\nÖmer Ayberk KESGİN\n\n\n\n\n\n Back to top",
+>>>>>>> Stashed changes
     "crumbs": [
       "Takım Üyeleri"
     ]
@@ -680,23 +684,23 @@
   {
     "objectID": "takim/esen.html#işler",
     "href": "takim/esen.html#işler",
-    "title": "ESEN ERTÜRK",
+    "title": "Esen Ertürk",
     "section": "İşler",
     "text": "İşler\n\nAksa Çoruh Elektrik Dağıtım, Müşteri Operasyonları Uzmanu 2018-2020\nEnerjisa Başkent Elektrik Dağıtım, Kaçak Tahakkuk Takım Yöneticisi, 2020- devam",
     "crumbs": [
       "Takım Üyeleri",
-      "ESEN ERTÜRK"
+      "Esen Ertürk"
     ]
   },
   {
     "objectID": "takim/esen.html#stajlar",
     "href": "takim/esen.html#stajlar",
-    "title": "ESEN ERTÜRK",
+    "title": "Esen Ertürk",
     "section": "Stajlar",
     "text": "Stajlar\n\nAksa Enerji, 2016\nOdaş Enerji, 2018",
     "crumbs": [
       "Takım Üyeleri",
-      "ESEN ERTÜRK"
+      "Esen Ertürk"
     ]
   },
   {
@@ -727,7 +731,7 @@
   {
     "objectID": "portfolyo/calisma1.html#title-çalışma-1",
     "href": "portfolyo/calisma1.html#title-çalışma-1",
-    "title": "FISTIKCI SAHAP",
+    "title": "FISTIKÇI ŞAHAP",
     "section": "title: “Çalışma 1”",
     "text": "title: “Çalışma 1”\n“1. video icin özet”",
     "crumbs": [
@@ -771,23 +775,56 @@
   {
     "objectID": "takim/osman.html#işler",
     "href": "takim/osman.html#işler",
-    "title": ".Osman ÖZKAL",
+    "title": "Osman ÖZKAL",
     "section": "İşler",
     "text": "İşler\n\nAksa Çoruh Elektrik Dağıtım, Müşteri Operasyonları Uzmanu 2018-2020\nEnerjisa Başkent Elektrik Dağıtım, Kaçak Tahakkuk Takım Yöneticisi, 2020- devam",
     "crumbs": [
       "Takım Üyeleri",
-      ".Osman ÖZKAL"
+      "Osman ÖZKAL"
     ]
   },
   {
     "objectID": "takim/osman.html#stajlar",
     "href": "takim/osman.html#stajlar",
-    "title": ".Osman ÖZKAL",
+    "title": "Osman ÖZKAL",
     "section": "Stajlar",
     "text": "Stajlar\n\nAksa Enerji, 2016\nOdaş Enerji, 2018",
     "crumbs": [
       "Takım Üyeleri",
-      ".Osman ÖZKAL"
+      "Osman ÖZKAL"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma2.html#aendüstri-mühendisliği-ve-veri-bilimi-uygulamaları",
+    "href": "portfolyo/calisma2.html#aendüstri-mühendisliği-ve-veri-bilimi-uygulamaları",
+    "title": "Çalışma 2",
+    "section": "",
+    "text": "1. Giriş\nMustafa Hoca, Boğaziçi Üniversitesi Endüstri Mühendisliği bölümünde öğretim üyesi ve aynı zamanda bir yazılım danışmanlık şirketinin kurucusudur. Lisans ve doktorasını ODTÜ ve Arizona State Üniversitesi’nde tamamlamış, veri bilimi, büyük ölçekli veri madenciliği, zaman serisi analizi ve optimizasyon alanlarında çalışmalar yapmaktadır. Bu raporda, hocanın endüstri mühendisliği ve veri bilimi kesişimindeki deneyimleri, çözülen problemler ve öğrencilere tavsiyeleri ele alınmaktadır.\n2. Gelişme\n2.1. Endüstri Mühendisliği ve Veri Bilimi Endüstri mühendisleri, problem çözme odaklı bir eğitim alırlar. Matematiksel modelleme, simülasyon ve optimizasyon gibi araçları kullanarak karmaşık sistemleri analiz ederler. Son yıllarda, veri analizi ve makine öğrenmesi yöntemleri müfredata eklenmiştir. Örneğin, “Veri Analitiği” dersinde R veya Python gibi araçlarla veri düzenleme, görselleştirme ve tahmin modelleri üzerine çalışmalar yapılmaktadır.\n2.2. Uygulamalı Problemler ve Çözümler * Kereste Yamulması Tahmini: Bir orman endüstrisi şirketi için kerestelerin kurutma sonrası yamulmasını öngören bir model geliştirilmiştir. Bu projede, kerestelerin fiziksel özellikleri (budak noktaları, kesit açıları) dijital görüntülerden çıkarılarak makine öğrenmesi modellerine entegre edilmiştir. Model, yamukluğun nedenlerini açıklayabilme ve önleyici aksiyonlar alabilme yeteneğiyle işletmeye ciddi kazanç sağlamıştır. * Elektrik Tüketim Tahmini: Enerji sektöründe, elektrik piyasasındaki dengesizlik maliyetlerini azaltmak için saatlik tüketim tahmin modelleri kullanılmıştır. Hava durumu, özel günler ve tarihsel verilerle beslenen modeller, şirketlerin daha doğru planlama yapmasını sağlamıştır. * Online Perakende Sıralama Algoritmaları: Bir e-ticaret platformunda, ürün sıralamasını optimize etmek için müşteri davranışları (tıklama, satın alma, favoriye ekleme) ve Google Trends verileri kullanılmıştır. Reinforcement learning yaklaşımıyla daha etkili sıralama politikaları geliştirilmiştir.\n2.3. Geleneksel ve Modern Yaklaşımlar * Geleneksel Öğrenme: Problemlerin kök nedenlerini anlamaya ve açıklanabilir modeller kurmaya odaklanır. Örneğin, doğrusal regresyon veya karar ağaçları gibi yöntemlerle tahminler yapılır. * Derin Öğrenme: Yapısal olmayan veriler (resim, ses, metin) için daha uygundur. Ancak, yorumlanabilirlik ve veri ihtiyacı gibi zorlukları vardır.\n3. Sonuç ve Öneriler\n3.1. Temel Çıkarımlar * Veri bilimi ve endüstri mühendisliği, karar verme süreçlerini iyileştirmede güçlü bir sinerji oluşturur. * Açıklanabilir modeller, iş dünyasında patronlara ve paydaşlara anlatım kolaylığı sağlar. * Reinforcement learning gibi modern teknikler, dinamik ortamlarda (e-ticaret, enerji piyasası) etkili sonuçlar verebilir.\n3.2. Öğrencilere Tavsiyeleri * Uygulamalar: Kaggle gibi platformlarda pratik, gerçek hayat problemlerine de odaklanma, * Akademik Destek: Yüksek lisans, özellikle istatistiksel öğrenme ve optimizasyon konularında derinleşme, * Kitap Önerisi: An Introduction to Statistical Learning, * Network: Hocalarla ve sektör profesyonelleri ile iletişim gibi tavsiyelerde bulunmaktadır.\n3.3. Gelecek Perspektifi Yapay zeka araçları (ChatGPT gibi) bazı süreçleri otomatikleştirse de, problem tanımlama ve veriyi anlama becerileri endüstri mühendislerinin önemini koruyacaktır. Özellikle “prescriptive analytics” gibi alanlarda, optimizasyon ve makine öğrenmesinin birleşimiyle yeni çözümler geliştirilebilir.\nNot: Özette chatgpt kullanılmamıştır tamamen ekibimize ait cümlelerdir.",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 2"
+    ]
+  },
+  {
+    "objectID": "takim/ayberk.html#işler",
+    "href": "takim/ayberk.html#işler",
+    "title": "Ömer Ayberk KESGİN",
+    "section": "İşler",
+    "text": "İşler\n\nAksa Çoruh Elektrik Dağıtım, Müşteri Operasyonları Uzmanu 2018-2020\nEnerjisa Başkent Elektrik Dağıtım, Kaçak Tahakkuk Takım Yöneticisi, 2020- devam",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Ömer Ayberk KESGİN"
+    ]
+  },
+  {
+    "objectID": "takim/ayberk.html#stajlar",
+    "href": "takim/ayberk.html#stajlar",
+    "title": "Ömer Ayberk KESGİN",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nAksa Enerji, 2016\nOdaş Enerji, 2018",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Ömer Ayberk KESGİN"
     ]
   },
   {
