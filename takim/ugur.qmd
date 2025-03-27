@@ -1,9 +1,9 @@
 ---
-title: "Yeşim  Ceran"
+title: "Yesim  Ceran"
 ---
 
-![](images/fotoğraf.jpg){fig-align="center"}
+![](images/UGUR.JPG){fig-align="center"}
 
-# Eğitim
+# Egitim
 
 -   Lisans,
