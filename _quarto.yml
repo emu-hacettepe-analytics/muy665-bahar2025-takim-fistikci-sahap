@@ -1,4 +1,3 @@
-
 project:
   type: website
   output-dir: docs
@@ -39,10 +38,10 @@ website:
         - takim.qmd
         - takim/esen.qmd
         - takim/ugur.qmd
-        - takim/osman.qmd  
-        - takim/yesim.qmd 
         - takim/cansu.qmd
-        - takim/ayberk.qmd
+        - takim/yesim.qmd  
+        - takim/osman.qmd  
+        - takim/ayberk.qmd 
         
         
   page-navigation: true
