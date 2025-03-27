@@ -6,4 +6,4 @@ title: "Yesim  Ceran"
 
 # Egitim
 
--   Lisans,
+-   Lisans
