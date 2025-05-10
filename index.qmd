@@ -29,10 +29,86 @@ Türkiye 2020 Araç İlanları Analizi
 
 ## Proje Konusu
 
-Örnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
+Bu projenin konusu, Türkiye'deki araba piyasasının analizini yapmak ve fiyatların farklı özelliklere göre nasıl değiştiğini anlamaktır.
 
 ## Veri Seti Hakkında Özet Bilgi
 
+Veri Setinin Temel Özellikleri:
+Marka (Marka):
+
+Araçların markasını belirtir. Örneğin, BMW, Audi, Mercedes, Ford gibi markalar olabilir.
+
+Araç Tip Grubu (Arac.Tip.Grubu):
+
+Araçların tipini veya sınıfını tanımlar. Örneğin, sedan, hatchback, SUV gibi araç türlerini belirler.
+
+Fiyat (Fiyat):
+
+Araçların satış fiyatını gösterir. Bu kolon, araçların piyasadaki değerini temsil eder ve genellikle analizlerin odak noktasıdır.
+
+Model Yıl (Model.Yıl):
+
+Araçların üretim yılına işaret eder. Bu kolon, araçların yaşını ve dolayısıyla değer kaybını incelemek için kullanılır.
+
+Kilometre (Km):
+
+Araçların kaç kilometre yol aldığı bilgisini içerir. Kilometre, aracın kullanım durumunu ve dolayısıyla fiyatını etkileyen önemli bir faktördür.
+
+Vites (Vites):
+
+Araçların vites türünü belirtir. Örneğin, otomatik vites, yarı otomatik vites, düz vites gibi seçenekler bulunabilir. Bu, kullanıcıların tercihlerine göre fiyatların değişmesini etkileyebilir.
+
+Yaş (Yas):
+
+Araçların yaşı, genellikle model yılına göre hesaplanır (2023 - Model.Yıl). Araç yaşının fiyat üzerindeki etkisi önemli bir analiz konusudur, çünkü araçlar yaşlandıkça değer kaybederler.
+
+Araç Yaşı (Vehicle_Age):
+
+Bu kolon, aracın yaşını (model yılına göre) belirtir. Araç yaşı, özellikle değer kaybı (depreciation) hesaplamalarında kullanılır.
+
 ## Sonuçlar
 
-Burada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.
+1. En Pahalı Araçlar (Marka ve Araç Tipine Göre)
+Sonuç: Her bir markanın içindeki en pahalı araç grupları belirlenmiş ve sıralanmıştır. Bu analiz, hangi markaların daha pahalı araçlar sunduğunu ve belirli araç gruplarının fiyatlarının nasıl değiştiğini gösterir. Örneğin, lüks markalar (BMW, Mercedes gibi) genellikle yüksek fiyatlarla öne çıkacaktır.
+
+2. Fiyat Trendleri (Marka ve Araç Grubu Bazında)
+Sonuç: Fiyatlar, yıllara göre farklı markalar ve araç grupları arasında nasıl değişiyor? Bu grafik, zaman içinde fiyatların nasıl evrildiğini ve hangi markaların veya araç tiplerinin fiyatlarının arttığını veya azaldığını gösterir.
+
+Örneğin, BMW gibi markalar, yıllar içinde fiyatlarını artırmış olabilirken, daha uygun fiyatlı markalar, fiyatlarını düşürebilir veya sabit tutabilir.
+
+Farklı araç grupları (SUV, sedan, hatchback) arasında da farklı fiyat trendleri görülebilir.
+
+3. Top 5 Marka Analizi
+Sonuç: En çok satılan ve piyasada en fazla bulunan ilk 5 marka (örneğin, BMW, Mercedes, Ford, Audi, Volkswagen) üzerine fiyat trendleri çıkarılmış. Bu markaların yıllık fiyat değişimleri karşılaştırıldığında, bazı markaların daha sabırlı bir fiyat artışı gösterdiği, diğerlerinin ise istikrarlı bir şekilde fiyatlarını koruduğu veya düşürdüğü gözlemlenebilir.
+
+4. BMW'ye Özel Fiyat Trendleri
+Sonuç: BMW markasının yıllık fiyat trendleri belirli araç gruplarına göre incelenmiştir. Örneğin, BMW 3 Serisi modelinin fiyatları yıllar içinde nasıl değişmiş? Bu tip özel analizler, belirli bir markanın veya modelin popülaritesine ve değer kaybına dair önemli bilgiler sağlar. BMW’nin fiyatları genellikle lüks araç piyasasında stabil kalırken, bazı yıllarda hızla artış gösterebilir.
+
+5. Vites Türüne Göre Araç Dağılımı
+Sonuç: Vites türleri arasında da belirli bir dağılım vardır. Otomatik vites araçlar, genellikle düz vites araçlardan daha fazla talep görebilir. Bu dağılımlar, kullanıcının tercihlerine ve teknolojinin gelişimine bağlı olarak değişir.
+
+Örneğin, otomatik vites araçlar, özellikle şehir içi sürüşlerde daha popüler olabilir.
+
+Vites türünün piyasa üzerindeki etkisi, araç fiyatlarını da etkileyebilir. Otomatik vitesli araçlar genellikle biraz daha pahalı olabilir.
+
+6. Araç Yaşı ile Fiyat Arasındaki İlişki (Depreciation)
+Sonuç: Araç yaşı ile fiyat arasındaki negatif ilişki (depreciation) net bir şekilde gözlemlenebilir. Araç yaşı arttıkça, fiyatlar genellikle düşer. Bu, araçların yıllık olarak değer kaybettiğini gösteren klasik bir trendtir. Örneğin, 5 yaşında bir araç, 10 yaşında bir araçtan daha pahalı olabilir.
+
+Jitter eklenmiş boxplot analizi, yaşa göre fiyatların daha ayrıntılı bir şekilde nasıl dağıldığını ve hangi yaş grubunun daha değerli araçlar sunduğunu gösterir.
+
+7. Vites Türü Dağılımı (Pie Chart)
+Sonuç: Araçların vites türlerinin dağılımı pie chart ile görselleştirilmiştir. Örneğin, Türkiye'de otomatik vites araçların sayısı, düz vites araçlardan daha fazla olabilir. Bu, sürücülerin tercihlerine göre değişir ve piyasa eğilimlerini yansıtır.
+
+8. Yaş Gruplarına Göre Fiyat Dağılımı (BMW Örneği)
+Sonuç: Örneğin, BMW 3 Serisi modelinin yaşı 0-3 yıl arasında olan araçların fiyatları genellikle daha yüksektir. 20 yaş üzeri araçların fiyatları, belirgin bir şekilde daha düşük olacaktır. Yaş gruplarına göre yapılan boxplot ve jitter analizi, yaşlanmış araçların fiyatlarının genellikle düşük olduğunu ve daha yeni araçların piyasada daha yüksek fiyatlarla satıldığını gösterir.
+
+9. Marka Bazında Ortalama Fiyat Dağılımı
+Sonuç: Markalara göre ortalama fiyat analizi, hangi markaların daha pahalı araçlar sunduğunu açıkça gösterir. BMW, Mercedes gibi premium markalar genellikle daha yüksek ortalama fiyatlara sahipken, daha ekonomik markalar (örneğin Fiat, Renault) daha düşük fiyatlarla öne çıkabilir.
+
+Çubuk grafik ile her markanın ortalama fiyatı karşılaştırılmıştır.
+
+10. Kilometre ile Fiyat İlişkisi
+Sonuç: Kilometre ile fiyat arasında genellikle negatif bir ilişki vardır. Yüksek kilometreye sahip araçlar, düşük kilometreli araçlara göre daha düşük fiyatlarla satılır. Bu, aracın kullanım durumu ve aşınma seviyesini gösteren önemli bir faktördür.
+
+11. Model Yılı ile Fiyat Dağılımı
+Sonuç: Model yılı arttıkça araçların fiyatları genellikle artar, çünkü daha yeni modeller genellikle daha yüksek fiyatlarla satılır. Bununla birlikte, araç yaşıyla ilişkilendirilmiş fiyat kaybı, eski model araçlarda daha belirgindir.

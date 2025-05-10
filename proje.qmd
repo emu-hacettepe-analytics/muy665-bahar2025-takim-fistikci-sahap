@@ -11,11 +11,24 @@ number-sections: true
 
 # Proje Genel Bakış ve Kapsamı
 
-xxxxxx
+Bu proje, Türkiye'deki ikinci el araç piyasasına dair verilerin analiz edilmesini amaçlayan bir çalışmadır. Verilen araç satış verileri üzerinden çeşitli analizler yaparak, fiyatların nasıl dağıldığını, araçların farklı özelliklerinin fiyat üzerindeki etkilerini, piyasa trendlerini ve diğer önemli faktörleri incelemeyi hedeflemektedir.
 
 # Veri
 
-xxxxxx
+```{r}
+ data <- read.csv("/Users/kullanıcıadı/Desktop/turkey_car_market.csv", header = TRUE, sep = ",")
+
+ install.packages("dplyr")
+ library(dplyr)
+
+ result <- data %>%
++   group_by(Marka, Arac.Tip.Grubu) %>%
++   summarise(Max_Price = max(Fiyat, na.rm = TRUE)) %>%
++   group_by(Marka) %>%
++   filter(Max_Price == max(Max_Price)) %>%
++   arrange(desc(Max_Price))
+
+```
 
 ## Veri Kaynağı
 
