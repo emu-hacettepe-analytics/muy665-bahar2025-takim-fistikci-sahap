@@ -40,18 +40,15 @@ Veri setindeki eksik ve uç (outlier) değerler incelenmiş, bazı analizlerde y
 ## 3.1 Keşifsel Veri Analizi
 
 -   **Marka ve araç tip gruplarının göre en pahalı araç analizi.**, renkli scatter grafiklerle gösterilmiş ve ayrım kolaylaştırılmıştır.
+
 ```{r}
-install.packages("dplyr")
 library(dplyr)
-install.packages("ggplot2")
 library(ggplot2)
-install.packages("scales")
 library(scales)
-install.packages("RColorBrewer")
 library(RColorBrewer)
-install.packages("ggcorrplot")
 library(ggcorrplot)
 ```
+
 ```{r}
 result <- data %>%
 +   group_by(Marka, Arac.Tip.Grubu) %>%
