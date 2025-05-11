@@ -18,12 +18,12 @@ Veri seti Kaggle platformundan temin edilmiştir: [Turkey Car Market 2020](https
 
 Veri setinde aşağıdaki temel değişkenler bulunmaktadır:
 
-- Marka
-- Arac.Tip.Grubu
-- Model.Yıl
-- Km
-- Fiyat
-- Vites
+-   Marka
+-   Arac.Tip.Grubu
+-   Model.Yıl
+-   Km
+-   Fiyat
+-   Vites
 
 Toplamda binlerce ilan yer almakta olup, hem popüler hem de nadir araç markaları dahil edilmiştir.
 
@@ -39,7 +39,7 @@ Veri setindeki eksik ve uç (outlier) değerler incelenmiş, bazı analizlerde y
 
 ## 3.1 Keşifsel Veri Analizi
 
-- **Marka ve araç tip gruplarının göre en pahalı araç analizi.**, renkli scatter grafiklerle gösterilmiş ve ayrım kolaylaştırılmıştır.
+-   **Marka ve araç tip gruplarının göre en pahalı araç analizi.**, renkli scatter grafiklerle gösterilmiş ve ayrım kolaylaştırılmıştır.
 
 ```{r}
 result <- data %>%
@@ -51,7 +51,7 @@ result <- data %>%
 
 ```
 
-- **Kilometre-Fiyat ilişkisi** incelendiğinde, düşük kilometreli araçların daha pahalı olduğu, yüksek kilometreli araçlarda fiyatların düştüğü gözlemlenmiştir.
+-   **Kilometre-Fiyat ilişkisi** incelendiğinde, düşük kilometreli araçların daha pahalı olduğu, yüksek kilometreli araçlarda fiyatların düştüğü gözlemlenmiştir.
 
 ```{r}
 ggplot(turkey_car_market, aes(x = Km, y = Fiyat)) +
@@ -65,22 +65,24 @@ ggplot(turkey_car_market, aes(x = as.factor(`Model Yıl`), y = Fiyat)) +
   theme(axis.text.x = element_text(angle = 90))
 
 ```
+
 ![KM ile Fiyat Analizi](\assets\images\Kilometre_ile_fiyat_iliskisi.jpg)
 
-**Bu görsel, kilometre ile araç fiyatı arasındaki ilişkiyi gösteren bir scatter grafiktir. Amaç, araçların kullanım miktarı (km) arttıkça fiyatlarının nasıl değiştiğini gözlemlemektir. Grafikte yoğun şekilde sol alt köşede toplanma görülür; bu da düşük kilometreli araçların daha pahalı olduğunu, kilometre arttıkça fiyatın belirgin şekilde düştüğünü gösterir. Outliers value olması bu grafiğin x eksenindeki genişliğe sebep olmuştur ve bu da veri setinde birkaç istisnai kayıt olduğunu düşündürür.
+\*\*Bu görsel, kilometre ile araç fiyatı arasındaki ilişkiyi gösteren bir scatter grafiktir. Amaç, araçların kullanım miktarı (km) arttıkça fiyatlarının nasıl değiştiğini gözlemlemektir. Grafikte yoğun şekilde sol alt köşede toplanma görülür; bu da düşük kilometreli araçların daha pahalı olduğunu, kilometre arttıkça fiyatın belirgin şekilde düştüğünü gösterir. Outliers value olması bu grafiğin x eksenindeki genişliğe sebep olmuştur ve bu da veri setinde birkaç istisnai kayıt olduğunu düşündürür.
 
-- **Araç yaşı ve fiyat ilişkisi**, negatif yönlü bir eğilim göstermekte, araç yaşı arttıkça fiyatlar düşmektedir.
+-   **Araç yaşı ve fiyat ilişkisi**, negatif yönlü bir eğilim göstermekte, araç yaşı arttıkça fiyatlar düşmektedir.
+
 ```{r}
 ggplot(turkey_car_market_clean, aes(x = Yas, y = Fiyat)) +
   geom_point(alpha = 0.4, color = "darkred") +
   geom_smooth(method = "lm", se = FALSE, color = "black") +
   labs(title = "Araç Yaşı ile Fiyat İlişkisi", x = "Yaş", y = "Fiyat")
 ```
-![Araç Yaşı ile Fiyat Analizi](\assets\images\Arac_yası_ile_fiyat_iliskisi.jpg)
-**Bu görsel, araç yaşı ile fiyat arasındaki ilişkiyi gösteren bir scatter grafiktir ve üzerine bir regresyon çizgisi (trend line)eklenmiştir. Amaç, araçlar yaşlandıkça fiyatlarının nasıl değiştiğini analiz etmektir. Noktalar, her bir aracın yaşına karşılık gelen fiyatını temsil ederken; çizgi, genel eğilimi gösterir. Grafik açıkça göstermektedir ki araç yaşı arttıkça fiyat azalma eğilimi gösterir. Bu da araçların ekonomik değerinin zamanla düştüğünü, yani tipik bir değer kaybı (depreciation) sürecini yansıtır.
 
+![Araç Yaşı ile Fiyat Analizi](\assets\images\Arac_yası_ile_fiyat_iliskisi.jpg) \*\*Bu görsel, araç yaşı ile fiyat arasındaki ilişkiyi gösteren bir scatter grafiktir ve üzerine bir regresyon çizgisi (trend line)eklenmiştir. Amaç, araçlar yaşlandıkça fiyatlarının nasıl değiştiğini analiz etmektir. Noktalar, her bir aracın yaşına karşılık gelen fiyatını temsil ederken; çizgi, genel eğilimi gösterir. Grafik açıkça göstermektedir ki araç yaşı arttıkça fiyat azalma eğilimi gösterir. Bu da araçların ekonomik değerinin zamanla düştüğünü, yani tipik bir değer kaybı (depreciation) sürecini yansıtır.
 
-- **Şanzıman türleri dağılımı** incelendiğinde, en yaygın şanzıman türünün %49.7 oranla düz vites olduğu gözlemlenmiştir.
+-   **Şanzıman türleri dağılımı** incelendiğinde, en yaygın şanzıman türünün %49.7 oranla düz vites olduğu gözlemlenmiştir.
+
 ```{r}
 vites_counts <- data %>%
   count(Vites, name = "Count") %>%
@@ -112,17 +114,14 @@ last_plot() +
   labs(fill = "Transmission Type (Count)")
 
 ```
+
 ![Şanzıman Tipi Analizi](\assets\images\sanzıman_pasta_grafigi.jpg)
 
-**Bu pasta grafiği, veri setindeki araçların şanzıman (vites) türlerine göre dağılımını göstermektedir. Üç farklı vites tipi yer almaktadır: Düz Vites, Otomatik Vites ve Yarı Otomatik Vites. Grafiğe göre:
-•	Düz Vites araçlar %49.7 ile en yaygın olan şanzıman türüdür.
-•	Otomatik Vites araçlar %27.1 oranında ikinci sıradadır.
-•	Yarı Otomatik Vites ise %23.2 oranıyla en az tercih edilen gruptur.
-Bu dağılım, Türkiye'de hâlâ manuel vitesli araçların otomatiklere kıyasla daha fazla tercih edildiğini veya veri setinde daha fazla temsil edildiğini göstermektedir. Pasta dilimleri hem renklerle ayrılmış hem de yüzdelik oranlarla etiketlenmiştir, bu da görselin okunabilirliğini ve yorumlanabilirliğini artırmaktadır. 
+\*\*Bu pasta grafiği, veri setindeki araçların şanzıman (vites) türlerine göre dağılımını göstermektedir. Üç farklı vites tipi yer almaktadır: Düz Vites, Otomatik Vites ve Yarı Otomatik Vites. Grafiğe göre: • Düz Vites araçlar %49.7 ile en yaygın olan şanzıman türüdür. • Otomatik Vites araçlar %27.1 oranında ikinci sıradadır. • Yarı Otomatik Vites ise %23.2 oranıyla en az tercih edilen gruptur. Bu dağılım, Türkiye'de hâlâ manuel vitesli araçların otomatiklere kıyasla daha fazla tercih edildiğini veya veri setinde daha fazla temsil edildiğini göstermektedir. Pasta dilimleri hem renklerle ayrılmış hem de yüzdelik oranlarla etiketlenmiştir, bu da görselin okunabilirliğini ve yorumlanabilirliğini artırmaktadır.
 
 ## 3.2 Trend Analizi
 
-- **BMW markasının yıllara göre fiyat trendleri** analiz edilmiş, özellikle SUV segmentinde (X5, X6) fiyatların son yıllarda hızla arttığı belirlenmiştir.
+-   **BMW markasının yıllara göre fiyat trendleri** analiz edilmiş, özellikle SUV segmentinde (X5, X6) fiyatların son yıllarda hızla arttığı belirlenmiştir.
 
 ```{r}
 install.packages("ggplot2")
@@ -159,11 +158,12 @@ ggplot(bmw_prices, aes(
 +   scale_y_continuous(labels = scales::comma)  # Format prices (e.g., 1,000,000)
 
 ```
+
 ![BMW markasının yıllara göre fiyat trendleri](\assets\images\bmw_fıyat_ılıskısı.jpg)
 
-**Bu çizgi grafik, BMW markasının farklı araç tip gruplarına göre yıllar içindeki ortalama fiyat değişimini göstermektedir. X ekseninde model yılları, Y ekseninde ise ortalama fiyat yer almaktadır. Renkli çizgiler BMW'nin çeşitli serilerini (örneğin: 1 Serisi, 3 Serisi, X5, X6, vb.) temsil eder ve her bir çizgi zaman içinde bu grubun ortalama fiyat eğilimini gösterir. Grafikten görüldüğü üzere özellikle X5 ve X6 gibi SUV segmentinde yer alan gruplarda fiyatlar son yıllarda oldukça keskin bir şekilde artış göstermektedir. Daha klasik sedan serilerde (örneğin 1, 3, 5 Serisi) ise fiyatlar daha istikrarlı bir artış eğilimi izlemektedir. Bu durum, SUV modellerin pazardaki yükselen talep ve donanım seviyeleriyle daha pahalı hale geldiğini gösterir. Ayrıca tüm serilerde 2010 sonrası dönemde fiyat artışlarının hızlandığı dikkat çekmektedir; bu da hem teknolojik gelişmeler hem de piyasa koşullarındaki değişimin etkisini yansıtır. Grafik, BMW araçlarının zaman içindeki değer trendlerini karşılaştırmak hangi segmentlerin daha hızlı değer kazandığını analiz etmek için güçlü bir  görseldir.
+\*\*Bu çizgi grafik, BMW markasının farklı araç tip gruplarına göre yıllar içindeki ortalama fiyat değişimini göstermektedir. X ekseninde model yılları, Y ekseninde ise ortalama fiyat yer almaktadır. Renkli çizgiler BMW'nin çeşitli serilerini (örneğin: 1 Serisi, 3 Serisi, X5, X6, vb.) temsil eder ve her bir çizgi zaman içinde bu grubun ortalama fiyat eğilimini gösterir. Grafikten görüldüğü üzere özellikle X5 ve X6 gibi SUV segmentinde yer alan gruplarda fiyatlar son yıllarda oldukça keskin bir şekilde artış göstermektedir. Daha klasik sedan serilerde (örneğin 1, 3, 5 Serisi) ise fiyatlar daha istikrarlı bir artış eğilimi izlemektedir. Bu durum, SUV modellerin pazardaki yükselen talep ve donanım seviyeleriyle daha pahalı hale geldiğini gösterir. Ayrıca tüm serilerde 2010 sonrası dönemde fiyat artışlarının hızlandığı dikkat çekmektedir; bu da hem teknolojik gelişmeler hem de piyasa koşullarındaki değişimin etkisini yansıtır. Grafik, BMW araçlarının zaman içindeki değer trendlerini karşılaştırmak hangi segmentlerin daha hızlı değer kazandığını analiz etmek için güçlü bir görseldir.
 
-- **bmw marka ve 3 serisi “araç.tip.grubu” için yıllara göre fiyat dağılımları
+-   \*\*bmw marka ve 3 serisi “araç.tip.grubu” için yıllara göre fiyat dağılımları
 
 ```{r}
 target_brand <- "BMW"
@@ -205,11 +205,12 @@ ggplot(filtered_data, aes(x = Age_Group, y = Fiyat)) +
   )
 
 ```
+
 ![BMW Marka 3 Serisi Modelinin Yıllara Göre Fiyat Trendleri](\assets\images\bmw_3_serisi_fiyat_iliskisi.jpg)
 
-**Bu grafik, BMW 3 Serisi araçların yaş gruplarına göre ikinci el piyasa fiyatlarındaki değişimi göstermektedir. Yatay eksende araç yaş grupları, dikey eksende ise fiyat yer almakta; her kutu grafik, ilgili yaş grubundaki fiyat dağılımını temsil etmektedir. Sarı elmaslar ortalama fiyatları, kutular ise medyan, çeyrek değerler ve uç noktaları özetlemektedir. Grafik genel olarak araç yaşı arttıkça hem ortalama hem medyan fiyatların belirgin şekilde azaldığını göstermektedir; bu da araçların zamanla değer kaybettiğini açık biçimde ortaya koyar. Özellikle ilk yıllarda fiyat düşüşü daha keskinken, 15 yaş ve sonrasında fiyatlar daha sabit ve düşük bir aralıkta seyretmektedir. Bu durum, ikinci el piyasasında hem değer kaybını hem de alım için uygun yaş aralıklarını anlamak açısından önemli bir görselleştirmedir. 
+\*\*Bu grafik, BMW 3 Serisi araçların yaş gruplarına göre ikinci el piyasa fiyatlarındaki değişimi göstermektedir. Yatay eksende araç yaş grupları, dikey eksende ise fiyat yer almakta; her kutu grafik, ilgili yaş grubundaki fiyat dağılımını temsil etmektedir. Sarı elmaslar ortalama fiyatları, kutular ise medyan, çeyrek değerler ve uç noktaları özetlemektedir. Grafik genel olarak araç yaşı arttıkça hem ortalama hem medyan fiyatların belirgin şekilde azaldığını göstermektedir; bu da araçların zamanla değer kaybettiğini açık biçimde ortaya koyar. Özellikle ilk yıllarda fiyat düşüşü daha keskinken, 15 yaş ve sonrasında fiyatlar daha sabit ve düşük bir aralıkta seyretmektedir. Bu durum, ikinci el piyasasında hem değer kaybını hem de alım için uygun yaş aralıklarını anlamak açısından önemli bir görselleştirmedir.
 
-- **Şanzıman türlerinin yıllara göre dağılımı**, bar grafikle görselleştirilmiş ve 2010 sonrası otomatik vites oranının arttığı saptanmıştır.
+-   **Şanzıman türlerinin yıllara göre dağılımı**, bar grafikle görselleştirilmiş ve 2010 sonrası otomatik vites oranının arttığı saptanmıştır.
 
 ```{r}
 transmission_counts <- data %>%
@@ -244,9 +245,8 @@ ggplot(transmission_counts, aes(
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))  # Pad y-axis
 
 ```
-![Model Yıllarına Göre Şanzıman Tipi Analizi](\assets\images\sanzıman_sutun_grafıgı.jpg)
-**Bu grafik, araçların model yılına göre şanzıman türlerinin dağılımını göstermektedir. Yatay eksende araçların model yılları, dikey eksende ise her yıl üretilen araç sayısı yer almaktadır. Renkler şanzıman türlerini temsil eder: yeşil çubuklar Düz Vites, mavi çubuklar Otomatik Vites, turuncu çubuklar ise Yarı Otomatik Vites araç sayısını göstermektedir.
-Grafik, özellikle 2010 sonrası yıllarda otomatik ve yarı otomatik vitesli araçların sayısının belirgin şekilde arttığını, buna rağmen düz vitesin hâlâ en yaygın tercih olduğunu ortaya koymaktadır. 2000 öncesi dönemlerde otomatik ve yarı otomatik vitesli araçların neredeyse yok denecek kadar az olması, bu teknolojilerin o yıllarda piyasada daha sınırlı olduğunu yansıtır. Sonuç olarak bu grafik, zaman içinde vites tercihindeki değişimi gözlemlemek ve teknolojik geçişleri analiz etmek açısından oldukça değerli bir görseldir.
+
+![Model Yıllarına Göre Şanzıman Tipi Analizi](\assets\images\sanzıman_sutun_grafıgı.jpg) \*\*Bu grafik, araçların model yılına göre şanzıman türlerinin dağılımını göstermektedir. Yatay eksende araçların model yılları, dikey eksende ise her yıl üretilen araç sayısı yer almaktadır. Renkler şanzıman türlerini temsil eder: yeşil çubuklar Düz Vites, mavi çubuklar Otomatik Vites, turuncu çubuklar ise Yarı Otomatik Vites araç sayısını göstermektedir. Grafik, özellikle 2010 sonrası yıllarda otomatik ve yarı otomatik vitesli araçların sayısının belirgin şekilde arttığını, buna rağmen düz vitesin hâlâ en yaygın tercih olduğunu ortaya koymaktadır. 2000 öncesi dönemlerde otomatik ve yarı otomatik vitesli araçların neredeyse yok denecek kadar az olması, bu teknolojilerin o yıllarda piyasada daha sınırlı olduğunu yansıtır. Sonuç olarak bu grafik, zaman içinde vites tercihindeki değişimi gözlemlemek ve teknolojik geçişleri analiz etmek açısından oldukça değerli bir görseldir.
 
 ## 3.3 Model Uydurma
 
@@ -254,13 +254,13 @@ Araç yaşı ve fiyat ilişkisine lineer regresyon modeli uygulanmıştır. Tren
 
 ## 3.4 Sonuçlar
 
-- Lüks markalar (Porsche, Jaguar, Maserati) en yüksek ortalama fiyatlara sahiptir.
-- BMW 3 Serisi araçlarda yaş gruplarına göre fiyat analizi yapılmış, yaş arttıkça hem medyan hem de ortalama fiyatların düştüğü görülmüştür.
-- Klasik araçlar (örneğin 60 yaş üzeri) koleksiyon değeri taşıdığı için daha yüksek fiyatlı olabilmektedir.
+-   Lüks markalar (Porsche, Jaguar, Maserati) en yüksek ortalama fiyatlara sahiptir.
+-   BMW 3 Serisi araçlarda yaş gruplarına göre fiyat analizi yapılmış, yaş arttıkça hem medyan hem de ortalama fiyatların düştüğü görülmüştür.
+-   Klasik araçlar (örneğin 60 yaş üzeri) koleksiyon değeri taşıdığı için daha yüksek fiyatlı olabilmektedir.
 
 # 4 Sonuçlar ve Ana Çıkarımlar
 
-- İkinci el araç piyasasında **yaş, kilometre ve marka**, fiyatı belirleyen en önemli faktörlerdir.
-- **Düz vites** halen en yaygın şanzıman türü olsa da, **otomatik ve yarı otomatik** tercihi özellikle son 10 yılda artmaktadır.
-- **Lüks segmentteki araçlar**, marka değerine bağlı olarak oldukça yüksek fiyatlara satılmaktadır.
-- **Araç yaşı ilerledikçe**, fiyatlar genellikle düşüş göstermekte ve bu durum istatistiksel analizlerle de doğrulanmaktadır.
+-   İkinci el araç piyasasında **yaş, kilometre ve marka**, fiyatı belirleyen en önemli faktörlerdir.
+-   **Düz vites** halen en yaygın şanzıman türü olsa da, **otomatik ve yarı otomatik** tercihi özellikle son 10 yılda artmaktadır.
+-   **Lüks segmentteki araçlar**, marka değerine bağlı olarak oldukça yüksek fiyatlara satılmaktadır.
+-   **Araç yaşı ilerledikçe**, fiyatlar genellikle düşüş göstermekte ve bu durum istatistiksel analizlerle de doğrulanmaktadır.
