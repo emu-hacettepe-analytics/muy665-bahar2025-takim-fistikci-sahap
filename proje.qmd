@@ -65,7 +65,7 @@ ggplot(turkey_car_market, aes(x = as.factor(`Model Yıl`), y = Fiyat)) +
   theme(axis.text.x = element_text(angle = 90))
 
 ```
-![KM ile Fiyat Analizi](\assets\images\........jpg)
+![KM ile Fiyat Analizi](\assets\images\Kilometre_ile_fiyat_iliskisi.jpg)
 
 **Bu görsel, kilometre ile araç fiyatı arasındaki ilişkiyi gösteren bir scatter grafiktir. Amaç, araçların kullanım miktarı (km) arttıkça fiyatlarının nasıl değiştiğini gözlemlemektir. Grafikte yoğun şekilde sol alt köşede toplanma görülür; bu da düşük kilometreli araçların daha pahalı olduğunu, kilometre arttıkça fiyatın belirgin şekilde düştüğünü gösterir. Outliers value olması bu grafiğin x eksenindeki genişliğe sebep olmuştur ve bu da veri setinde birkaç istisnai kayıt olduğunu düşündürür.
 
@@ -76,7 +76,7 @@ ggplot(turkey_car_market_clean, aes(x = Yas, y = Fiyat)) +
   geom_smooth(method = "lm", se = FALSE, color = "black") +
   labs(title = "Araç Yaşı ile Fiyat İlişkisi", x = "Yaş", y = "Fiyat")
 ```
-![Araç Yaşı ile Fiyat Analizi](\assets\images\........jpg)
+![Araç Yaşı ile Fiyat Analizi](\assets\images\Arac_yası_ile_fiyat_iliskisi.jpg)
 **Bu görsel, araç yaşı ile fiyat arasındaki ilişkiyi gösteren bir scatter grafiktir ve üzerine bir regresyon çizgisi (trend line)eklenmiştir. Amaç, araçlar yaşlandıkça fiyatlarının nasıl değiştiğini analiz etmektir. Noktalar, her bir aracın yaşına karşılık gelen fiyatını temsil ederken; çizgi, genel eğilimi gösterir. Grafik açıkça göstermektedir ki araç yaşı arttıkça fiyat azalma eğilimi gösterir. Bu da araçların ekonomik değerinin zamanla düştüğünü, yani tipik bir değer kaybı (depreciation) sürecini yansıtır.
 
 
@@ -112,7 +112,7 @@ last_plot() +
   labs(fill = "Transmission Type (Count)")
 
 ```
-![Şanzıman Tipi Analizi](\assets\images\..........jpg)
+![Şanzıman Tipi Analizi](\assets\images\sanzıman_pasta_grafigi.jpg)
 
 **Bu pasta grafiği, veri setindeki araçların şanzıman (vites) türlerine göre dağılımını göstermektedir. Üç farklı vites tipi yer almaktadır: Düz Vites, Otomatik Vites ve Yarı Otomatik Vites. Grafiğe göre:
 •	Düz Vites araçlar %49.7 ile en yaygın olan şanzıman türüdür.
@@ -159,7 +159,7 @@ ggplot(bmw_prices, aes(
 +   scale_y_continuous(labels = scales::comma)  # Format prices (e.g., 1,000,000)
 
 ```
-![BMW markasının yıllara göre fiyat trendleri](\assets\images\..........jpg)
+![BMW markasının yıllara göre fiyat trendleri](\assets\images\bmw_fıyat_ılıskısı.jpg)
 
 **Bu çizgi grafik, BMW markasının farklı araç tip gruplarına göre yıllar içindeki ortalama fiyat değişimini göstermektedir. X ekseninde model yılları, Y ekseninde ise ortalama fiyat yer almaktadır. Renkli çizgiler BMW'nin çeşitli serilerini (örneğin: 1 Serisi, 3 Serisi, X5, X6, vb.) temsil eder ve her bir çizgi zaman içinde bu grubun ortalama fiyat eğilimini gösterir. Grafikten görüldüğü üzere özellikle X5 ve X6 gibi SUV segmentinde yer alan gruplarda fiyatlar son yıllarda oldukça keskin bir şekilde artış göstermektedir. Daha klasik sedan serilerde (örneğin 1, 3, 5 Serisi) ise fiyatlar daha istikrarlı bir artış eğilimi izlemektedir. Bu durum, SUV modellerin pazardaki yükselen talep ve donanım seviyeleriyle daha pahalı hale geldiğini gösterir. Ayrıca tüm serilerde 2010 sonrası dönemde fiyat artışlarının hızlandığı dikkat çekmektedir; bu da hem teknolojik gelişmeler hem de piyasa koşullarındaki değişimin etkisini yansıtır. Grafik, BMW araçlarının zaman içindeki değer trendlerini karşılaştırmak hangi segmentlerin daha hızlı değer kazandığını analiz etmek için güçlü bir  görseldir.
 
@@ -205,7 +205,7 @@ ggplot(filtered_data, aes(x = Age_Group, y = Fiyat)) +
   )
 
 ```
-![BMW Marka 3 Serisi Modelinin Yıllara Göre Fiyat Trendleri](\assets\images\..........jpg)
+![BMW Marka 3 Serisi Modelinin Yıllara Göre Fiyat Trendleri](\assets\images\bmw_3_serisi_fiyat_iliskisi.jpg)
 
 **Bu grafik, BMW 3 Serisi araçların yaş gruplarına göre ikinci el piyasa fiyatlarındaki değişimi göstermektedir. Yatay eksende araç yaş grupları, dikey eksende ise fiyat yer almakta; her kutu grafik, ilgili yaş grubundaki fiyat dağılımını temsil etmektedir. Sarı elmaslar ortalama fiyatları, kutular ise medyan, çeyrek değerler ve uç noktaları özetlemektedir. Grafik genel olarak araç yaşı arttıkça hem ortalama hem medyan fiyatların belirgin şekilde azaldığını göstermektedir; bu da araçların zamanla değer kaybettiğini açık biçimde ortaya koyar. Özellikle ilk yıllarda fiyat düşüşü daha keskinken, 15 yaş ve sonrasında fiyatlar daha sabit ve düşük bir aralıkta seyretmektedir. Bu durum, ikinci el piyasasında hem değer kaybını hem de alım için uygun yaş aralıklarını anlamak açısından önemli bir görselleştirmedir. 
 
@@ -244,7 +244,7 @@ ggplot(transmission_counts, aes(
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))  # Pad y-axis
 
 ```
-![Model Yıllarına Göre Şanzıman Tipi Analizi](\assets\images\..........jpg)
+![Model Yıllarına Göre Şanzıman Tipi Analizi](\assets\images\sanzıman_sutun_grafıgı.jpg)
 **Bu grafik, araçların model yılına göre şanzıman türlerinin dağılımını göstermektedir. Yatay eksende araçların model yılları, dikey eksende ise her yıl üretilen araç sayısı yer almaktadır. Renkler şanzıman türlerini temsil eder: yeşil çubuklar Düz Vites, mavi çubuklar Otomatik Vites, turuncu çubuklar ise Yarı Otomatik Vites araç sayısını göstermektedir.
 Grafik, özellikle 2010 sonrası yıllarda otomatik ve yarı otomatik vitesli araçların sayısının belirgin şekilde arttığını, buna rağmen düz vitesin hâlâ en yaygın tercih olduğunu ortaya koymaktadır. 2000 öncesi dönemlerde otomatik ve yarı otomatik vitesli araçların neredeyse yok denecek kadar az olması, bu teknolojilerin o yıllarda piyasada daha sınırlı olduğunu yansıtır. Sonuç olarak bu grafik, zaman içinde vites tercihindeki değişimi gözlemlemek ve teknolojik geçişleri analiz etmek açısından oldukça değerli bir görseldir.
 
