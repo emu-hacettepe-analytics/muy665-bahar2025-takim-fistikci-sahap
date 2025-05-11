@@ -1,6 +1,11 @@
 ---
 title: "Türkiye İkinci El Araç Piyasası Analizi"
-format: html
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    theme: cosmo
 editor: visual
 ---
 
