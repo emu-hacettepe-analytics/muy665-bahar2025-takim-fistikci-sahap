@@ -39,8 +39,6 @@ Veri setindeki eksik ve uç (outlier) değerler incelenmiş, bazı analizlerde y
 
 ## 3.1 Keşifsel Veri Analizi
 
--   **Marka ve araç tip gruplarının göre en pahalı araç analizi.**, renkli scatter grafiklerle gösterilmiş ve ayrım kolaylaştırılmıştır.
-
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -56,6 +54,37 @@ turkey_car_market <- read_excel("C:/Veriler/turkey_car_market.xlsx")
 # Veriyi oku
 
 ```
+
+-   **Marka ve araç tip gruplarının göre en pahalı araç analizi.**, renkli scatter grafiklerle gösterilmiş ve ayrım kolaylaştırılmıştır.
+
+    ```{r}
+    library(dplyr)
+    library(ggplot2)
+
+    # Veri: Her marka + araç tipi grubundaki en pahalı araç
+    en_pahali <- turkey_car_market %>%
+      filter(!is.na(Fiyat)) %>%
+      group_by(Marka, `Arac Tip Grubu`) %>%
+      summarise(Max_Fiyat = max(Fiyat, na.rm = TRUE), .groups = "drop")
+
+    # Grafik: Renkli scatter plot
+    ggplot(en_pahali, aes(x = Marka, y = Max_Fiyat, color = `Arac Tip Grubu`)) +
+      geom_point(size = 4, alpha = 0.8) +
+      labs(
+        title = "Marka ve Arac Tip Grubuna Göre En Pahalı Araçlar",
+        subtitle = "Her Marka-Tip kombinasyonundaki maksimum fiyatlar",
+        x = "Marka",
+        y = "Fiyat (TL)",
+        color = "Arac Tip Grubu"
+      ) +
+      scale_y_continuous(labels = scales::comma) +
+      theme_minimal() +
+      theme(
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.title = element_text(face = "bold", hjust = 0.5)
+      )
+
+    ```
 
 -   **Kilometre-Fiyat ilişkisi** incelendiğinde, düşük kilometreli araçların daha pahalı olduğu, yüksek kilometreli araçlarda fiyatların düştüğü gözlemlenmiştir.
 
@@ -264,10 +293,44 @@ ggplot(filtered_data, aes(x = Age_Group, y = Fiyat)) +
 -   **Şanzıman türlerinin yıllara göre dağılımı**, bar grafikle görselleştirilmiş ve 2010 sonrası otomatik vites oranının arttığı saptanmıştır.
 
 ```{r}
+library(dplyr)
+library(ggplot2)
+library(readxl)
+
+# 1. Veriyi oku
+turkey_car_market <- read_excel("C:/Veriler/turkey_car_market.xlsx")
+
+# 2. Sütun adlarını temizle
+library(janitor)
+turkey_car_market <- clean_names(turkey_car_market)
+
+# 3. Yıllık vites türü dağılımını hazırla
+vites_yillik <- turkey_car_market %>%
+  filter(!is.na(model_yil), !is.na(vites)) %>%
+  group_by(model_yil, vites) %>%
+  summarise(count = n(), .groups = "drop")
+
+# 4. Grafik çiz
+ggplot(vites_yillik, aes(x = model_yil, y = count, fill = vites)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("D\u00fcz Vites" = "green", 
+                               "Otomatik Vites" = "blue", 
+                               "Yarı Otomatik Vites" = "orange")) +
+  labs(
+    title = "Transmission Type Distribution by Year",
+    x = "Model Year",
+    y = "Number of Cars",
+    fill = "Transmission Type"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
 
 ```
 
-![Model Yıllarına Göre Şanzıman Tipi Analizi](\assets\images\sanzıman_sutun_grafıgı.jpg) \*\*Bu grafik, araçların model yılına göre şanzıman türlerinin dağılımını göstermektedir. Yatay eksende araçların model yılları, dikey eksende ise her yıl üretilen araç sayısı yer almaktadır. Renkler şanzıman türlerini temsil eder: yeşil çubuklar Düz Vites, mavi çubuklar Otomatik Vites, turuncu çubuklar ise Yarı Otomatik Vites araç sayısını göstermektedir. Grafik, özellikle 2010 sonrası yıllarda otomatik ve yarı otomatik vitesli araçların sayısının belirgin şekilde arttığını, buna rağmen düz vitesin hâlâ en yaygın tercih olduğunu ortaya koymaktadır. 2000 öncesi dönemlerde otomatik ve yarı otomatik vitesli araçların neredeyse yok denecek kadar az olması, bu teknolojilerin o yıllarda piyasada daha sınırlı olduğunu yansıtır. Sonuç olarak bu grafik, zaman içinde vites tercihindeki değişimi gözlemlemek ve teknolojik geçişleri analiz etmek açısından oldukça değerli bir görseldir.
+\*\*Bu grafik, araçların model yılına göre şanzıman türlerinin dağılımını göstermektedir. Yatay eksende araçların model yılları, dikey eksende ise her yıl üretilen araç sayısı yer almaktadır. Renkler şanzıman türlerini temsil eder: yeşil çubuklar Düz Vites, mavi çubuklar Otomatik Vites, turuncu çubuklar ise Yarı Otomatik Vites araç sayısını göstermektedir. Grafik, özellikle 2010 sonrası yıllarda otomatik ve yarı otomatik vitesli araçların sayısının belirgin şekilde arttığını, buna rağmen düz vitesin hâlâ en yaygın tercih olduğunu ortaya koymaktadır. 2000 öncesi dönemlerde otomatik ve yarı otomatik vitesli araçların neredeyse yok denecek kadar az olması, bu teknolojilerin o yıllarda piyasada daha sınırlı olduğunu yansıtır. Sonuç olarak bu grafik, zaman içinde vites tercihindeki değişimi gözlemlemek ve teknolojik geçişleri analiz etmek açısından oldukça değerli bir görseldir.
 
 ## 3.3 Model Uydurma
 
